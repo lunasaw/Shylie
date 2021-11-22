@@ -349,3 +349,21 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'project_id' in 'fie
 2021-11-22 17:41:23,205  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
 2021-11-22 17:42:23,212  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
 2021-11-22 17:42:23,234  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
+2021-11-22 17:43:23,235  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
+2021-11-22 17:43:23,244  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
+2021-11-22 17:44:23,247  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
+2021-11-22 17:44:23,254  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
+2021-11-22 17:45:23,255  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
+2021-11-22 17:45:23,272  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
+2021-11-22 17:46:23,273  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
+2021-11-22 17:46:23,278  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
+2021-11-22 17:47:23,283  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
+2021-11-22 17:47:23,288  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
+2021-11-22 17:48:23,294  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
+2021-11-22 17:48:23,337  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
+2021-11-22 17:49:23,340  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
+2021-11-22 17:49:23,353  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
+2021-11-22 17:50:23,359  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
+2021-11-22 17:50:23,491  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
+2021-11-22 17:51:23,493  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
+2021-11-22 17:51:23,498  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
