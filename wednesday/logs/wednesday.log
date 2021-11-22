@@ -367,3 +367,9 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'project_id' in 'fie
 2021-11-22 17:50:23,491  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
 2021-11-22 17:51:23,493  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
 2021-11-22 17:51:23,498  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
+2021-11-22 17:52:23,503  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
+2021-11-22 17:52:23,703  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
+2021-11-22 17:53:23,704  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
+2021-11-22 17:53:23,707  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
+2021-11-22 17:54:23,712  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatService, method=commonScanProject 
+2021-11-22 17:54:23,720  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatService, method=commonScanProject, proceed=null 
