@@ -1,0 +1,3 @@
+2021-09-20 18:53:13,237  INFO [main] (StartupInfoLogger.java:55) - Starting FusionMessageApplication v1.0.1-RELEASE on lunas-mac.local with PID 38028 (/Users/luna/graduation-project/application/fusion-message/fusion-message-server-1.0.1-RELEASE.jar started by luna in /Users/luna/graduation-project/application/wednesday) 
+2021-09-20 18:53:13,245  INFO [main] (SpringApplication.java:651) - No active profile set, falling back to default profiles: default 
+2021-09-20 18:53:25,653  INFO [main] (StartupInfoLogger.java:61) - Started FusionMessageApplication in 14.531 seconds (JVM running for 15.682) 

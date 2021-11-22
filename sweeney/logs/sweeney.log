@@ -1,0 +1,178 @@
+2021-11-21 18:14:14,315  INFO [main] (StartupInfoLogger.java:55) - Starting SweeneyApplication v1.8-RELEASE on Shmily.local with PID 28190 (/Users/luna/graduation-project/application/sweeney/sweeney-server-1.8-RELEASE.jar started by luna in /Users/luna/graduation-project/application/sweeney) 
+2021-11-21 18:14:14,318  INFO [main] (SpringApplication.java:651) - No active profile set, falling back to default profiles: default 
+2021-11-21 18:14:51,400  INFO [main] (StartupInfoLogger.java:55) - Starting SweeneyApplication v1.8-RELEASE on Shmily.local with PID 28279 (/Users/luna/graduation-project/application/sweeney/sweeney-server-1.8-RELEASE.jar started by luna in /Users/luna/graduation-project/application/sweeney) 
+2021-11-21 18:14:51,404  INFO [main] (SpringApplication.java:651) - No active profile set, falling back to default profiles: default 
+2021-11-21 18:17:31,098  INFO [main] (StartupInfoLogger.java:55) - Starting SweeneyApplication v1.8-RELEASE on Shmily.local with PID 28381 (/Users/luna/graduation-project/application/sweeney/sweeney-server-1.8-RELEASE.jar started by luna in /Users/luna/graduation-project/application/sweeney) 
+2021-11-21 18:17:31,102  INFO [main] (SpringApplication.java:651) - No active profile set, falling back to default profiles: default 
+2021-11-21 18:17:34,884  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=WednesdaySupport, method=expireHasJobCache 
+2021-11-21 18:17:34,900  INFO [scheduling-2] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:17:34,907  INFO [scheduling-2] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:17:34,908  INFO [scheduling-2] (ScheduledAspect.java:47) - scheduled invoke, className=MainFlowStateMachine, method=sendHeartBeat 
+2021-11-21 18:17:34,915  INFO [scheduling-2] (ScheduledAspect.java:52) - scheduled invoke success, className=MainFlowStateMachine, method=sendHeartBeat 
+2021-11-21 18:17:34,924  INFO [scheduling-2] (MainFlowService.java:31) - trying push mainFlowStateMachine from INIT to PREPARE 
+2021-11-21 18:17:34,938  INFO [main] (StartupInfoLogger.java:61) - Started SweeneyApplication in 4.362 seconds (JVM running for 4.908) 
+2021-11-21 18:17:35,014  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=expireHasJobCache, param=[] 
+2021-11-21 18:17:35,021  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=WednesdaySupport, method=expireHasJobCache 
+2021-11-21 18:17:35,344  INFO [scheduling-2] (OshiUtils.java:85) - init oshiHardwareDTO success, oshiHardwareDTO={"firmwareDTO":{"description":"EFI64","manufacturer":"LENOVO","name":"boot.efi","version":"429.80.1.0.0"},"hostName":"Shmily.local","ipAddressSet":["192.168.2.102"],"macAddressSet":["60:c5:47:06:6f:88"],"manufacturer":"LENOVO","memoryDTO":{"memeryTotal":17179869184,"swapTotal":2147483648},"model":"MacBookPro13,2","processorDTO":{"logicalProcessorCount":8,"name":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz\n 1 physical CPU package(s)\n 4 physical CPU core(s)\n 8 logical CPU(s)\nIdentifier: Intel64 Family 6 Model 142 Stepping 10\nProcessorID: bfebfbff000806ea\nMicroarchitecture: Coffee Lake","physicalPackageCount":1,"physicalProcessorCount":4,"processorId":"bfebfbff000806ea"},"serialNumber":"C02R605CGYFH"} 
+2021-11-21 18:17:35,359  WARN [scheduling-2] (UserTools.java:47) - UserSetting.json 不存在 使用 application.properties login  
+2021-11-21 18:17:35,365  INFO [scheduling-2] (SupportAspect.java:54) - support invoke, className=UserSupport, method=login, param=[{"password":"11111111","userMark":"1173282254@qq.com"}] 
+2021-11-21 18:17:36,363  INFO [scheduling-2] (UserSupport.java:36) - userClient.login, loginVO=com.luna.fusion.user.vo.LoginVO@18032e9, site=sweeney, resultDTO={"code":1,"data":"PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN","message":"success","success":true} 
+2021-11-21 18:17:36,364  INFO [scheduling-2] (MainFlowStateMachine.java:145) - 检查网页是否登录，否则使用配置项登录，获得sessionKey sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN 
+2021-11-21 18:17:36,372  INFO [scheduling-2] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putSweeneyHardwareDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",{"agentKey":"C02R605CGYFH","agentVersion":"1.8-SNAPSHOT","oshiHardwareDTO":{"firmwareDTO":{"description":"EFI64","manufacturer":"LENOVO","name":"boot.efi","version":"429.80.1.0.0"},"hostName":"Shmily.local","ipAddressSet":["192.168.2.102:8004"],"macAddressSet":["60:c5:47:06:6f:88"],"manufacturer":"LENOVO","memoryDTO":{"memeryTotal":17179869184,"swapTotal":2147483648},"model":"MacBookPro13,2","processorDTO":{"logicalProcessorCount":8,"name":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz\n 1 physical CPU package(s)\n 4 physical CPU core(s)\n 8 logical CPU(s)\nIdentifier: Intel64 Family 6 Model 142 Stepping 10\nProcessorID: bfebfbff000806ea\nMicroarchitecture: Coffee Lake","physicalPackageCount":1,"physicalProcessorCount":4,"processorId":"bfebfbff000806ea"},"serialNumber":"C02R605CGYFH"}}] 
+2021-11-21 18:17:36,455  INFO [scheduling-2] (WednesdaySupport.java:43) - sweeneyClient.putSweeneyHardwareDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, sweeneyHardwareDTO={"agentKey":"C02R605CGYFH","agentVersion":"1.8-SNAPSHOT","oshiHardwareDTO":{"firmwareDTO":{"description":"EFI64","manufacturer":"LENOVO","name":"boot.efi","version":"429.80.1.0.0"},"hostName":"Shmily.local","ipAddressSet":["192.168.2.102:8004"],"macAddressSet":["60:c5:47:06:6f:88"],"manufacturer":"LENOVO","memoryDTO":{"memeryTotal":17179869184,"swapTotal":2147483648},"model":"MacBookPro13,2","processorDTO":{"logicalProcessorCount":8,"name":"Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz\n 1 physical CPU package(s)\n 4 physical CPU core(s)\n 8 logical CPU(s)\nIdentifier: Intel64 Family 6 Model 142 Stepping 10\nProcessorID: bfebfbff000806ea\nMicroarchitecture: Coffee Lake","physicalPackageCount":1,"physicalProcessorCount":4,"processorId":"bfebfbff000806ea"},"serialNumber":"C02R605CGYFH"}}, resultDTO={"code":1,"data":5,"message":"success","success":true} 
+2021-11-21 18:17:36,455  INFO [scheduling-2] (MainFlowStateMachine.java:150) -  开始上报硬件信息，获得agentId agentId=5  
+2021-11-21 18:17:36,455  INFO [scheduling-2] (MainFlowService.java:33) - push mainFlowStateMachine from INIT to PREPARE success 
+2021-11-21 18:17:36,455  INFO [scheduling-2] (MainFlowService.java:38) - trying push mainFlowStateMachine from PREPARE to LOGIN 
+2021-11-21 18:17:36,499  INFO [scheduling-2] (MainFlowService.java:40) - push mainFlowStateMachine from PREPARE to LOGIN success 
+2021-11-21 18:17:36,539  INFO [scheduling-2] (WednesdaySupport.java:73) - sweeneyClient.hasJob, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, resultDTO={"code":1,"data":true,"message":"success","success":true} 
+2021-11-21 18:17:36,539  INFO [scheduling-2] (MainFlowService.java:46) - trying push mainFlowStateMachine from LOGIN to SERVER_JOB 
+2021-11-21 18:17:36,540  INFO [scheduling-2] (MainFlowService.java:48) - push mainFlowStateMachine from LOGIN to SERVER_JOB success 
+2021-11-21 18:17:37,902  INFO [scheduling-2] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=getJob, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5] 
+2021-11-21 18:17:38,160  INFO [scheduling-2] (WednesdaySupport.java:57) - sweeneyClient.getJob, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, resultDTO={"code":1,"data":{"attackMode":3,"hashMode":0,"hashSet":["22691aaa0d954f34614df234b55a7a55"],"limit":353046600,"mask":"?l?l?l?l?l?l?l?l","skip":0,"taskResultIdSet":[6518,6519,6520,6521,6522,6523,6524,6525],"type":"task"},"message":"success","success":true} 
+2021-11-21 18:17:38,161  INFO [scheduling-2] (HashcatHolder.java:70) - getJobAndRunAndSubmitResult::hashcatJobDTO={"attackMode":3,"hashMode":0,"hashSet":["22691aaa0d954f34614df234b55a7a55"],"limit":353046600,"mask":"?l?l?l?l?l?l?l?l","skip":0,"taskResultIdSet":[6518,6519,6520,6521,6522,6523,6524,6525],"type":"task"} 
+2021-11-21 18:17:38,168  INFO [scheduling-2] (HashcatCore.java:281) - testing hashcat 测试hashcat不加--force运行 
+2021-11-21 18:17:38,169  INFO [scheduling-2] (ProcessTools.java:61) - start executeAndGetOutput, commandList=["/Users/luna/graduation-project/application/sweeney/bin/hashcat-mac/bin/hashcat","-b","-m","0"], workingDir=/Users/luna/graduation-project/application/sweeney/bin/hashcat-mac/bin, waitSeconds=60, mustSuccess=false 
+2021-11-21 18:17:38,180  INFO [process-stream-reader-0] (ProcessTools.java:79) - start process InputStream 
+2021-11-21 18:17:38,899 zIWfNP0McTZ5r4jk3KbMzEoEHbeuA4O6 INFO [http-nio-8004-exec-3] (ApiAspect.java:85) - rest request, param=[] /sweeney/my/api/getUserIndex
+2021-11-21 18:17:38,913 zIWfNP0McTZ5r4jk3KbMzEoEHbeuA4O6 INFO [http-nio-8004-exec-3] (ApiAspect.java:91) - rest respond success, param=[], respond={"code":1,"data":"http://localhost:8001/fusion-user/user/index?site=sweeney","message":"success","success":true} /sweeney/my/api/getUserIndex
+2021-11-21 18:17:45,789  INFO [process-stream-reader-0] (ProcessTools.java:99) - finish process InputStream 
+2021-11-21 18:17:45,789  INFO [scheduling-2] (ProcessTools.java:130) - executeAndGetOutput finish, commandList=["/Users/luna/graduation-project/application/sweeney/bin/hashcat-mac/bin/hashcat","-b","-m","0"], workingDir=/Users/luna/graduation-project/application/sweeney/bin/hashcat-mac/bin, waitSeconds=60, mustSuccess=false, output=hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 (Dec 21 2020 17:26:36)) - Platform #1 [Apple]
+====================================================================
+* Device #1: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz, skipped
+* Device #2: Intel(R) UHD Graphics 617, 1984/2048 MB (512 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --optimized-kernel-enable
+
+Hashmode: 0 - MD5
+
+Speed.#2.........:   242.1 MH/s (100.11ms) @ Accel:512 Loops:256 Thr:8 Vec:1
+
+Started: Sun Nov 21 18:17:38 2021
+[2K
+Stopped: Sun Nov 21 18:17:45 2021
+ 
+2021-11-21 18:17:45,790  INFO [scheduling-2] (HashcatCore.java:288) - test core success 测试成功！ 
+2021-11-21 18:17:45,790  INFO [scheduling-2] (HashcatHolder.java:118) - generateHashcatCoreParamDTO::hashcatJobDTO = {"attackMode":3,"hashMode":0,"hashSet":["22691aaa0d954f34614df234b55a7a55"],"limit":353046600,"mask":"?l?l?l?l?l?l?l?l","skip":0,"taskResultIdSet":[6518,6519,6520,6521,6522,6523,6524,6525],"type":"task"} 
+2021-11-21 18:17:45,815  INFO [scheduling-2] (HashcatCore.java:253) - testing, hashMode=0 
+2021-11-21 18:17:45,817  INFO [scheduling-2] (ProcessTools.java:61) - start executeAndGetOutput, commandList=["/Users/luna/graduation-project/application/sweeney/bin/hashcat-mac/bin/hashcat","-b","-m","0"], workingDir=/Users/luna/graduation-project/application/sweeney/bin/hashcat-mac/bin, waitSeconds=60, mustSuccess=false 
+2021-11-21 18:17:45,822  INFO [process-stream-reader-0] (ProcessTools.java:79) - start process InputStream 
+2021-11-21 18:17:51,487  INFO [scheduling-2] (ProcessTools.java:130) - executeAndGetOutput finish, commandList=["/Users/luna/graduation-project/application/sweeney/bin/hashcat-mac/bin/hashcat","-b","-m","0"], workingDir=/Users/luna/graduation-project/application/sweeney/bin/hashcat-mac/bin, waitSeconds=60, mustSuccess=false, output=hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 (Dec 21 2020 17:26:36)) - Platform #1 [Apple]
+====================================================================
+* Device #1: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz, skipped
+* Device #2: Intel(R) UHD Graphics 617, 1984/2048 MB (512 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --optimized-kernel-enable
+
+Hashmode: 0 - MD5
+
+Speed.#2.........:   235.0 MH/s (51.10ms) @ Accel:64 Loops:1024 Thr:8 Vec:1
+
+Started: Sun Nov 21 18:17:45 2021
+[2K
+Stopped: Sun Nov 21 18:17:51 2021
+ 
+2021-11-21 18:17:51,488  INFO [scheduling-2] (HashcatCore.java:259) - test success, hashMode=0 
+2021-11-21 18:17:51,488  INFO [process-stream-reader-0] (ProcessTools.java:99) - finish process InputStream 
+2021-11-21 18:17:51,499  INFO [scheduling-2] (HashcatCore.java:153) - start running, hashcatCoreParamDTO={"attackMode":3,"hashFile":"/Users/luna/graduation-project/application/sweeney/temp/hashcat/9mevOYjSdsLsP9MQ77VUIJ5nD3OmbO2H","hashMode":0,"hashcatInputDTOList":[{"input":"?l?l?l?l?l?l?l?l","type":"mask"},{"input":"0","type":"skip"},{"input":"353046600","type":"limit"}],"needForce":false}, commandList=["/Users/luna/graduation-project/application/sweeney/bin/hashcat-mac/bin/hashcat","-a","3","-m","0","/Users/luna/graduation-project/application/sweeney/temp/hashcat/9mevOYjSdsLsP9MQ77VUIJ5nD3OmbO2H","?l?l?l?l?l?l?l?l","-s","0","-l","353046600","--status","--status-timer=3","--machine-readable","--quiet","--self-test-disable"] 
+2021-11-21 18:17:51,503  INFO [hashcat-core-0] (HashcatCore.java:162) - start process InputStream 
+2021-11-21 18:18:34,909  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:18:34,925  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"720470016\",\"speedList\":[\"17144437\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:18:35,046  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"720470016\",\"speedList\":[\"17144437\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:18:35,048  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:19:35,054  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:19:35,067  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"1695301632\",\"speedList\":[\"17100311\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:19:35,210  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"1695301632\",\"speedList\":[\"17100311\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:19:35,211  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:20:35,213  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:20:35,215  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"2719678464\",\"speedList\":[\"17271145\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:20:35,246  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"2719678464\",\"speedList\":[\"17271145\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:20:35,247  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:21:35,251  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:21:35,253  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"3716628480\",\"speedList\":[\"12870100\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:21:35,389  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"3716628480\",\"speedList\":[\"12870100\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:21:35,390  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:22:34,920  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=MainFlowStateMachine, method=sendHeartBeat 
+2021-11-21 18:22:34,922  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=heartbeat, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5] 
+2021-11-21 18:22:34,965  INFO [scheduling-1] (WednesdaySupport.java:50) - sweeneyClient.heartbeat, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, resultDTO={"code":1,"message":"success","success":true} 
+2021-11-21 18:22:34,967  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=MainFlowStateMachine, method=sendHeartBeat 
+2021-11-21 18:22:35,025  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=WednesdaySupport, method=expireHasJobCache 
+2021-11-21 18:22:35,026  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=expireHasJobCache, param=[] 
+2021-11-21 18:22:35,027  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=WednesdaySupport, method=expireHasJobCache 
+2021-11-21 18:22:35,395  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:22:35,396  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"4754055168\",\"speedList\":[\"16685128\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:22:35,439  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"4754055168\",\"speedList\":[\"16685128\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:22:35,441  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:23:35,444  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:23:35,446  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"5859901440\",\"speedList\":[\"18200279\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:23:35,520  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"5859901440\",\"speedList\":[\"18200279\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:23:35,521  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:24:35,523  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:24:35,525  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"7050977280\",\"speedList\":[\"20127705\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:24:35,584  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"7050977280\",\"speedList\":[\"20127705\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:24:35,586  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:25:35,588  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:25:35,589  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"8220524544\",\"speedList\":[\"19087399\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:25:35,619  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"8220524544\",\"speedList\":[\"19087399\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:25:35,620  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:26:35,621  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:26:35,622  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"9570705408\",\"speedList\":[\"22321276\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:26:35,654  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"9570705408\",\"speedList\":[\"22321276\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:26:35,655  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:27:34,971  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=MainFlowStateMachine, method=sendHeartBeat 
+2021-11-21 18:27:34,972  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=heartbeat, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5] 
+2021-11-21 18:27:35,003  INFO [scheduling-1] (WednesdaySupport.java:50) - sweeneyClient.heartbeat, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, resultDTO={"code":1,"message":"success","success":true} 
+2021-11-21 18:27:35,004  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=MainFlowStateMachine, method=sendHeartBeat 
+2021-11-21 18:27:35,032  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=WednesdaySupport, method=expireHasJobCache 
+2021-11-21 18:27:35,034  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=expireHasJobCache, param=[] 
+2021-11-21 18:27:35,035  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=WednesdaySupport, method=expireHasJobCache 
+2021-11-21 18:27:35,659  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:27:35,661  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"10779475968\",\"speedList\":[\"20159199\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:27:35,703  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"10779475968\",\"speedList\":[\"20159199\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:27:35,708  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:28:35,713  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:28:35,715  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"11946663936\",\"speedList\":[\"19178703\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:28:35,748  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"11946663936\",\"speedList\":[\"19178703\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:28:35,750  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:29:35,752  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:29:35,755  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"12912943104\",\"speedList\":[\"16292757\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:29:35,809  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"12912943104\",\"speedList\":[\"16292757\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:29:35,811  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:30:35,816  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:30:35,817  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"14036484096\",\"speedList\":[\"18287988\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:30:35,845  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"14036484096\",\"speedList\":[\"18287988\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:30:35,847  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:31:35,853  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:31:35,854  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"15150587904\",\"speedList\":[\"18335769\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:31:35,887  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"15150587904\",\"speedList\":[\"18335769\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:31:35,888  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:32:35,012  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=MainFlowStateMachine, method=sendHeartBeat 
+2021-11-21 18:32:35,014  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=heartbeat, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5] 
+2021-11-21 18:32:35,047  INFO [scheduling-1] (WednesdaySupport.java:50) - sweeneyClient.heartbeat, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, resultDTO={"code":1,"message":"success","success":true} 
+2021-11-21 18:32:35,048  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=MainFlowStateMachine, method=sendHeartBeat 
+2021-11-21 18:32:35,048  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=WednesdaySupport, method=expireHasJobCache 
+2021-11-21 18:32:35,049  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=expireHasJobCache, param=[] 
+2021-11-21 18:32:35,050  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=WednesdaySupport, method=expireHasJobCache 
+2021-11-21 18:32:35,892  INFO [scheduling-1] (ScheduledAspect.java:47) - scheduled invoke, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:32:35,893  INFO [scheduling-1] (SupportAspect.java:54) - support invoke, className=WednesdaySupport, method=putHashcatStatusDTO, param=["PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN",5,{"content":"{\"attempted\":\"16211312640\",\"speedList\":[\"17497815\"],\"status\":\"running\",\"total\":\"208827064576\"}"}] 
+2021-11-21 18:32:35,923  INFO [scheduling-1] (WednesdaySupport.java:102) - sweeneyClient.putHashcatStatusDTO, sessionKey=PyYImjK6VzE9uVSK3oyTeHfBS4hVwRlN, agentId=5, hashcatStatusDTO={"content":"{\"attempted\":\"16211312640\",\"speedList\":[\"17497815\"],\"status\":\"running\",\"total\":\"208827064576\"}"}, resultDTO={"code":1,"data":4,"message":"success","success":true} 
+2021-11-21 18:32:35,925  INFO [scheduling-1] (ScheduledAspect.java:52) - scheduled invoke success, className=HashcatHolder, method=reportHashcatStatus 
+2021-11-21 18:32:50,622 oEEXYP0LKNcrnwHAxwmadMXYRCNhus8T INFO [http-nio-8004-exec-8] (ApiAspect.java:85) - rest request, param=[] /sweeney/my/api/getUserIndex
+2021-11-21 18:32:50,624 oEEXYP0LKNcrnwHAxwmadMXYRCNhus8T INFO [http-nio-8004-exec-8] (ApiAspect.java:91) - rest respond success, param=[], respond={"code":1,"data":"http://localhost:8001/fusion-user/user/index?site=sweeney","message":"success","success":true} /sweeney/my/api/getUserIndex
