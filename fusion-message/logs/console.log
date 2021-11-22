@@ -55,3 +55,27 @@
 2021-11-22 17:58:31,725  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-11-22 17:58:31,725  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 2021-11-22 17:58:31,782  INFO (FrameworkServlet.java:547) - Completed initialization in 56 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2021-11-22 20:02:30,346  INFO (PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-22 20:02:34,792  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8002 (http)
+2021-11-22 20:02:34,927  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8002"]
+2021-11-22 20:02:34,930  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-11-22 20:02:34,931  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-22 20:02:35,488  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-11-22 20:02:35,489  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 18530 ms
+2021-11-22 20:02:45,179  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-22 20:02:46,114  INFO (WelcomePageHandlerMapping.java:58) - Adding welcome page template: index
+2021-11-22 20:02:48,897  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
+2021-11-22 20:02:49,308  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8002"]
+2021-11-22 20:02:49,517  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8002 (http) with context path '/fusion-message'
+2021-11-22 20:03:03,286  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-22 20:03:03,312  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-11-22 20:03:03,648  INFO (FrameworkServlet.java:547) - Completed initialization in 335 ms
