@@ -37,9 +37,9 @@ cd /Users/luna/graduation-project/application/fusion-message
 java -Dspring.config.location=/Users/luna/graduation-project/application/fusion-message/application-local.properties -jar /Users/luna/graduation-project/application/fusion-message/fusion-message-server-1.0.1-RELEASE.jar >> /Users/luna/graduation-project/application/fusion-message/logs/console.log &
 
 # sweeney
-cd /Users/luna/graduation-project/application/fusion-sweeney
+cd /Users/luna/graduation-project/application/sweeney
 java -Dspring.config.location=/Users/luna/graduation-project/application/sweeney/application-local.properties -jar /Users/luna/graduation-project/application/sweeney/sweeney-server-1.8-RELEASE.jar >> /Users/luna/graduation-project/application/sweeney/logs/console.log &
 
 # wednesday
-cd /Users/luna/graduation-project/application/fusion-wednesday
+cd /Users/luna/graduation-project/application/wednesday
 java -Dspring.config.location=/Users/luna/graduation-project/application/wednesday/application-local.properties -jar /Users/luna/graduation-project/application/wednesday/wednesday-server-1.0.1-RELEASE.jar >> /Users/luna/graduation-project/application/wednesday/logs/console.log &

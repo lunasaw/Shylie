@@ -677,3 +677,66 @@ Caused by: java.lang.IllegalArgumentException: Value must only contain valid cha
 2021-11-21 18:33:25,649  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"17086980096","speedList":["18329386"],"status":"running","total":"208827064576"} 
 2021-11-21 18:33:28,666  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18602613	1000	EXEC_RUNTIME	9.164917	CURKU	967680	PROGRESS	17145962496	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
 2021-11-21 18:33:28,667  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"17145962496","speedList":["18602613"],"status":"running","total":"208827064576"} 
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2021-11-22 17:04:52,661  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
+2021-11-22 17:04:52,698  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
+2021-11-22 17:04:52,699  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-11-22 17:04:52,700  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-22 17:04:53,120  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-11-22 17:04:53,121  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 8593 ms
+2021-11-22 17:04:55,819  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2021-11-22 17:04:55,821  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
+2021-11-22 17:04:58,865  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
+2021-11-22 17:04:58,978  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
+2021-11-22 17:04:59,294  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8004"]
+2021-11-22 17:04:59,479  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8004 (http) with context path '/sweeney'
+2021-11-22 17:05:13,800  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-22 17:05:13,801  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-11-22 17:05:13,838  INFO (FrameworkServlet.java:547) - Completed initialization in 36 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2021-11-22 17:05:53,847  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
+2021-11-22 17:05:54,067  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
+2021-11-22 17:05:54,068  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-11-22 17:05:54,069  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-22 17:05:54,254  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-11-22 17:05:54,255  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 11327 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2021-11-22 17:06:35,647  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
+2021-11-22 17:06:35,781  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
+2021-11-22 17:06:35,783  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-11-22 17:06:35,784  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-22 17:06:36,636  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-11-22 17:06:36,636  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 24000 ms
+2021-11-22 17:06:45,092  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2021-11-22 17:06:45,099  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
+2021-11-22 17:06:52,177  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
+2021-11-22 17:06:52,357  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
+2021-11-22 17:06:52,952  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8004"]
+2021-11-22 17:06:53,659  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8004 (http) with context path '/sweeney'
+2021-11-22 17:06:59,333  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-22 17:06:59,334  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-11-22 17:06:59,545  INFO (FrameworkServlet.java:547) - Completed initialization in 211 ms
