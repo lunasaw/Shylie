@@ -3,3 +3,6 @@
 2021-11-22 17:06:11,582  INFO [main] (StartupInfoLogger.java:55) - Starting FusionMessageApplication v1.0.1-RELEASE on Shylie.local with PID 57931 (/Users/luna/graduation-project/application/fusion-message/fusion-message-server-1.0.1-RELEASE.jar started by luna in /Users/luna/graduation-project/application/fusion-message) 
 2021-11-22 17:06:11,600  INFO [main] (SpringApplication.java:651) - No active profile set, falling back to default profiles: default 
 2021-11-22 17:06:54,900  INFO [main] (StartupInfoLogger.java:61) - Started FusionMessageApplication in 47.959 seconds (JVM running for 54.668) 
+2021-11-22 17:58:06,202  INFO [main] (StartupInfoLogger.java:55) - Starting FusionMessageApplication v1.0.1-RELEASE on Shylie.local with PID 61149 (/Users/luna/graduation-project/application/fusion-message/fusion-message-server-1.0.1-RELEASE.jar started by luna in /Users/luna/graduation-project/application/fusion-message) 
+2021-11-22 17:58:06,209  INFO [main] (SpringApplication.java:651) - No active profile set, falling back to default profiles: default 
+2021-11-22 17:58:30,025  INFO [main] (StartupInfoLogger.java:61) - Started FusionMessageApplication in 27.709 seconds (JVM running for 30.262) 

@@ -1851,3 +1851,106 @@ Microarchitecture: Broadwell (Client)', processorId='bfebfbff000306d4', physical
 2021-11-22 17:07:26,229  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-11-22 17:07:26,230  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 2021-11-22 17:07:26,400  INFO (FrameworkServlet.java:547) - Completed initialization in 169 ms
+2021-11-22 17:57:34,586  ERROR (DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/wednesday] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: code=9999, message=system error] with root cause
+java.lang.RuntimeException: code=9999, message=system error
+	at com.luna.common.dto.ResultDTOUtils.checkResultAndGetData(ResultDTOUtils.java:14)
+	at com.luna.wednesday.support.UserSupport.getUserIdBySessionKey(UserSupport.java:26)
+	at com.luna.wednesday.support.UserSupport$$FastClassBySpringCGLIB$$5fc7a548.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.luna.wednesday.support.UserSupport$$EnhancerBySpringCGLIB$$518fc2e6.getUserIdBySessionKey(<generated>)
+	at com.luna.wednesday.interceptor.LoginInterceptor.checkSessionKey(LoginInterceptor.java:68)
+	at com.luna.wednesday.interceptor.LoginInterceptor.preHandle(LoginInterceptor.java:51)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:141)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1035)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.luna.wednesday.config.ShutDownFilter.doFilterInternal(ShutDownFilter.java:47)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2021-11-22 17:58:16,970  INFO (PostProcessorRegistrationDelegate.java:330) - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-22 17:58:20,998  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8003 (http)
+2021-11-22 17:58:21,183  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8003"]
+2021-11-22 17:58:21,185  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-11-22 17:58:21,186  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-22 17:58:21,613  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-11-22 17:58:21,613  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 14954 ms
+2021-11-22 17:58:29,522  INFO (OshiUtils.java:94) - init oshiHardwareDTO success, oshiHardwareDTO=OshiHardwareDTO{hostName='Shylie.local', manufacturer='Apple Inc.', model='MacBookPro12,1', serialNumber='C17QD861FVH5', firmwareDTO=FirmwareDTO{manufacturer='Apple Inc.', name='boot.efi', description='EFI64', version='428.40.10.0.0'}, motherboardDTO=MotherboardDTO{manufacturer='Apple Inc.', model='Mac-E43C1C25D4880AD6', version='1.0', serialNumber='C17QD861FVH5'}, macAddressSet=[ac:bc:32:9a:b7:e5, 1a:ec:09:92:57:0d], processor=ProcessorDTO{name='Intel(R) Core(TM) i5-5257U CPU @ 2.70GHz
+ 1 physical CPU package(s)
+ 2 physical CPU core(s)
+ 4 logical CPU(s)
+Identifier: Intel64 Family 6 Model 61 Stepping 4
+ProcessorID: bfebfbff000306d4
+Microarchitecture: Broadwell (Client)', processorId='bfebfbff000306d4', physicalPackageCount=1, physicalProcessorCount=2, logicalProcessorCount=4, nice='null', system='null', user='null', wait='null', idle='null'}, memory=null, jvm=null, sysFiles=null, systemInfoDTO=null}
+2021-11-22 17:58:30,665  INFO (HikariDataSource.java:110) - HikariPool-1 - Starting...
+2021-11-22 17:58:32,198  INFO (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+2021-11-22 17:58:38,354  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2021-11-22 17:58:38,357  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
+2021-11-22 17:58:39,439  INFO (WelcomePageHandlerMapping.java:58) - Adding welcome page template: index
+2021-11-22 17:58:40,663  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
+2021-11-22 17:58:40,734  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
+2021-11-22 17:58:40,858  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8003"]
+2021-11-22 17:58:40,927  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8003 (http) with context path '/wednesday'
+2021-11-22 17:58:41,083  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-22 17:58:41,083  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-11-22 17:58:41,116  INFO (FrameworkServlet.java:547) - Completed initialization in 33 ms
