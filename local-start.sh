@@ -30,7 +30,6 @@ fi
 
 
 HOME_PATH=/Users/luna/graduation-project/application
-PROFILE=application-local.properties
 SHELL_NAME=local-start.sh
 # user
 APPLICATION=fusion-user

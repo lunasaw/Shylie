@@ -28,18 +28,17 @@ if [[ "" != "$PID" ]]; then
   sleep 3
 fi
 
+HOME_PATH=/Users/luna/graduation-project/application
+SHELL_NAME=start.sh
 # user
-cd /Users/luna/graduation-project/application/fusion-user
-java -Dspring.config.location=/Users/luna/graduation-project/application/fusion-user/application.properties -jar /Users/luna/graduation-project/application/fusion-user/fusion-user-server-1.0-RELEASE.jar >> /Users/luna/graduation-project/application/fusion-user/logs/console.log &
-
+APPLICATION=fusion-user
+sh $HOME_PATH/$APPLICATION/$SHELL_NAME
 # message
-cd /Users/luna/graduation-project/application/fusion-message
-java -Dspring.config.location=/Users/luna/graduation-project/application/fusion-message/application.properties -jar /Users/luna/graduation-project/application/fusion-message/fusion-message-server-1.0.1-RELEASE.jar >> /Users/luna/graduation-project/application/fusion-message/logs/console.log &
-
+APPLICATION=fusion-message
+sh $HOME_PATH/$APPLICATION/$SHELL_NAME
 # sweeney
-cd /Users/luna/graduation-project/application/sweeney
-java -Dspring.config.location=/Users/luna/graduation-project/application/sweeney/application.properties -jar /Users/luna/graduation-project/application/sweeney/sweeney-server-1.8-RELEASE.jar >> /Users/luna/graduation-project/application/sweeney/logs/console.log &
-
+APPLICATION=sweeney
+sh $HOME_PATH/$APPLICATION/$SHELL_NAME
 # wednesday
-cd /Users/luna/graduation-project/application/wednesday
-java -Dspring.config.location=/Users/luna/graduation-project/application/wednesday/application.properties -jar /Users/luna/graduation-project/application/wednesday/wednesday-server-1.0.1-RELEASE.jar >> /Users/luna/graduation-project/application/wednesday/logs/console.log &
+APPLICATION=wednesday
+sh $HOME_PATH/$APPLICATION/$SHELL_NAME
