@@ -8,4 +8,11 @@ if [[ "" != "$PID" ]]; then
   sleep 3
 fi
 
-java -Dspring.config.location=/Users/luna/graduation-project/application/fusion-message/application-local.properties -jar /Users/luna/graduation-project/application/fusion-message/fusion-message-server-1.0.1-RELEASE.jar >> /Users/luna/graduation-project/application/fusion-message/logs/console.log &
+HOME_PATH=/Users/luna/graduation-project/application
+PROFILE=application.properties
+JAR_VERSION=fusion-message-server-1.0.1-RELEASE.jar
+APPLICATION=fusion-message
+LOG_PATH=$HOME_PATH/$APPLICATION/logs
+rm -rf $LOG_PATH
+mkdir $HOME_PATH/$APPLICATION/logs
+$HOME_PATH/jre-mac/bin/java  -Dspring.config.location=$HOME_PATH/$APPLICATION/$PROFILE -jar $HOME_PATH/$APPLICATION/$JAR_VERSION >> $HOME_PATH/$APPLICATION/logs/console.log &

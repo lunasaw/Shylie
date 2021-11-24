@@ -7,676 +7,21 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.2.RELEASE)
 
-2021-11-21 18:14:14,798  WARN (AbstractApplicationContext.java:558) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.luna.sweeney.SweeneyApplication]; nested exception is java.lang.IllegalStateException: Error processing condition on org.springframework.boot.actuate.autoconfigure.audit.AuditEventsEndpointAutoConfiguration
-2021-11-21 18:14:14,806  INFO (ConditionEvaluationReportLoggingListener.java:136) - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-11-21 18:14:14,810  ERROR (SpringApplication.java:826) - Application run failed
-org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.luna.sweeney.SweeneyApplication]; nested exception is java.lang.IllegalStateException: Error processing condition on org.springframework.boot.actuate.autoconfigure.audit.AuditEventsEndpointAutoConfiguration
-	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:597)
-	at org.springframework.context.annotation.ConfigurationClassParser.access$900(ConfigurationClassParser.java:109)
-	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.lambda$processGroupImports$1(ConfigurationClassParser.java:805)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorGroupingHandler.processGroupImports(ConfigurationClassParser.java:801)
-	at org.springframework.context.annotation.ConfigurationClassParser$DeferredImportSelectorHandler.process(ConfigurationClassParser.java:771)
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:325)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:242)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.luna.sweeney.SweeneyApplication.main(SweeneyApplication.java:13)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
-	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
-	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
-	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:52)
-Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.actuate.autoconfigure.audit.AuditEventsEndpointAutoConfiguration
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
-	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
-	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:221)
-	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:587)
-	... 27 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Value must only contain valid chars
-	at org.springframework.util.Assert.isTrue(Assert.java:118)
-	at org.springframework.boot.actuate.endpoint.EndpointId.<init>(EndpointId.java:58)
-	at org.springframework.boot.actuate.endpoint.EndpointId.fromPropertyValue(EndpointId.java:146)
-	at org.springframework.boot.actuate.autoconfigure.endpoint.condition.OnAvailableEndpointCondition$ExposureInformation.bind(OnAvailableEndpointCondition.java:114)
-	at org.springframework.boot.actuate.autoconfigure.endpoint.condition.OnAvailableEndpointCondition$ExposureInformation.<init>(OnAvailableEndpointCondition.java:105)
-	at org.springframework.boot.actuate.autoconfigure.endpoint.condition.OnAvailableEndpointCondition.getExposureInformation(OnAvailableEndpointCondition.java:87)
-	at org.springframework.boot.actuate.autoconfigure.endpoint.condition.OnAvailableEndpointCondition.getMatchOutcome(OnAvailableEndpointCondition.java:66)
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
-	... 30 common frames omitted
-2021-11-21 18:17:55,283  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	25203532	1000	EXEC_RUNTIME	9.590769	CURKU	0	PROGRESS	70778880	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:17:55,290  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"70778880","speedList":["25203532"],"status":"running","total":"208827064576"} 
-2021-11-21 18:17:58,299  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	22799211	1000	EXEC_RUNTIME	11.423261	CURKU	0	PROGRESS	132710400	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:17:58,299  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"132710400","speedList":["22799211"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:01,307  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21695820	1000	EXEC_RUNTIME	12.318411	CURKU	9216	PROGRESS	191471616	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:01,308  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"191471616","speedList":["21695820"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:04,319  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21017744	1000	EXEC_RUNTIME	11.462647	CURKU	9216	PROGRESS	248684544	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:04,319  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"248684544","speedList":["21017744"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:07,326  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20117780	1000	EXEC_RUNTIME	13.079202	CURKU	9216	PROGRESS	298524672	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:07,327  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"298524672","speedList":["20117780"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:10,349  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19172814	1000	EXEC_RUNTIME	11.396962	CURKU	18432	PROGRESS	342540288	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:10,350  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"342540288","speedList":["19172814"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:13,364  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18531973	1000	EXEC_RUNTIME	10.851767	CURKU	18432	PROGRESS	387072000	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:13,365  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"387072000","speedList":["18531973"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:16,384  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18909183	1000	EXEC_RUNTIME	8.423529	CURKU	18432	PROGRESS	451952640	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:16,386  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"451952640","speedList":["18909183"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:19,401  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18814734	1000	EXEC_RUNTIME	9.768909	CURKU	27648	PROGRESS	506290176	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:19,402  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"506290176","speedList":["18814734"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:22,420  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18275549	1000	EXEC_RUNTIME	11.795515	CURKU	27648	PROGRESS	546988032	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:22,422  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"546988032","speedList":["18275549"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:25,442  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17817838	1000	EXEC_RUNTIME	11.624068	CURKU	27648	PROGRESS	587096064	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:25,444  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"587096064","speedList":["17817838"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:28,481  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17446368	1000	EXEC_RUNTIME	12.096102	CURKU	27648	PROGRESS	627793920	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:28,483  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"627793920","speedList":["17446368"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:31,499  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17226875	1000	EXEC_RUNTIME	10.811798	CURKU	36864	PROGRESS	671809536	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:31,500  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"671809536","speedList":["17226875"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:34,522  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17144437	1000	EXEC_RUNTIME	11.102723	CURKU	36864	PROGRESS	720470016	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:34,525  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"720470016","speedList":["17144437"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:37,540  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16862995	1000	EXEC_RUNTIME	12.376282	CURKU	36864	PROGRESS	759693312	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:37,541  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"759693312","speedList":["16862995"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:40,573  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16720137	1000	EXEC_RUNTIME	10.813953	CURKU	36864	PROGRESS	803635200	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:40,576  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"803635200","speedList":["16720137"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:43,594  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16446861	1000	EXEC_RUNTIME	12.440819	CURKU	46080	PROGRESS	839983104	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:43,595  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"839983104","speedList":["16446861"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:46,614  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16302705	1000	EXEC_RUNTIME	10.860795	CURKU	46080	PROGRESS	882450432	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:46,616  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"882450432","speedList":["16302705"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:49,639  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16217476	1000	EXEC_RUNTIME	10.778850	CURKU	46080	PROGRESS	926687232	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:49,641  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"926687232","speedList":["16217476"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:52,660  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16170356	1000	EXEC_RUNTIME	10.986095	CURKU	55296	PROGRESS	972767232	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:52,661  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"972767232","speedList":["16170356"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:55,691  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16024340	1000	EXEC_RUNTIME	12.174097	CURKU	55296	PROGRESS	1012580352	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:55,694  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1012580352","speedList":["16024340"],"status":"running","total":"208827064576"} 
-2021-11-21 18:18:58,746  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16037508	1000	EXEC_RUNTIME	10.027001	CURKU	55296	PROGRESS	1062125568	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:18:58,752  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1062125568","speedList":["16037508"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:01,766  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16145259	1000	EXEC_RUNTIME	9.055140	CURKU	55296	PROGRESS	1118453760	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:01,768  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1118453760","speedList":["16145259"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:04,781  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16277550	1000	EXEC_RUNTIME	9.757783	CURKU	64512	PROGRESS	1176625152	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:04,782  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1176625152","speedList":["16277550"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:07,801  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18904615	1000	EXEC_RUNTIME	9.507265	CURKU	64512	PROGRESS	1233248256	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:07,803  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1233248256","speedList":["18904615"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:10,818  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17467399	1000	EXEC_RUNTIME	10.175936	CURKU	64512	PROGRESS	1283973120	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:10,819  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1283973120","speedList":["17467399"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:13,833  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17287790	1000	EXEC_RUNTIME	10.714123	CURKU	73728	PROGRESS	1335066624	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:13,834  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1335066624","speedList":["17287790"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:16,850  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17056096	1000	EXEC_RUNTIME	10.982255	CURKU	73728	PROGRESS	1384906752	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:16,851  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1384906752","speedList":["17056096"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:19,864  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16890796	1000	EXEC_RUNTIME	10.307344	CURKU	73728	PROGRESS	1434157056	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:19,866  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1434157056","speedList":["16890796"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:22,883  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17631077	1000	EXEC_RUNTIME	8.498398	CURKU	82944	PROGRESS	1497341952	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:22,885  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1497341952","speedList":["17631077"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:25,900  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17643073	1000	EXEC_RUNTIME	9.192934	CURKU	82944	PROGRESS	1550721024	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:25,901  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1550721024","speedList":["17643073"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:28,913  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17450110	1000	EXEC_RUNTIME	11.649898	CURKU	82944	PROGRESS	1599676416	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:28,914  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1599676416","speedList":["17450110"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:31,938  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17204424	1000	EXEC_RUNTIME	11.885879	CURKU	92160	PROGRESS	1646051328	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:31,939  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1646051328","speedList":["17204424"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:34,964  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17100311	1000	EXEC_RUNTIME	11.740836	CURKU	92160	PROGRESS	1695301632	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:34,965  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1695301632","speedList":["17100311"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:37,999  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17250837	1000	EXEC_RUNTIME	9.065959	CURKU	92160	PROGRESS	1751924736	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:38,000  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1751924736","speedList":["17250837"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:41,014  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17339909	1000	EXEC_RUNTIME	11.351553	CURKU	101376	PROGRESS	1806852096	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:41,015  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1806852096","speedList":["17339909"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:44,031  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17525144	1000	EXEC_RUNTIME	9.780837	CURKU	101376	PROGRESS	1866129408	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:44,032  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1866129408","speedList":["17525144"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:47,049  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17585903	1000	EXEC_RUNTIME	10.724965	CURKU	101376	PROGRESS	1921572864	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:47,050  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1921572864","speedList":["17585903"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:50,066  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17509936	1000	EXEC_RUNTIME	10.645777	CURKU	110592	PROGRESS	1971191808	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:50,070  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1971191808","speedList":["17509936"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:53,094  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17351351	1000	EXEC_RUNTIME	11.500842	CURKU	110592	PROGRESS	2016608256	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:53,099  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2016608256","speedList":["17351351"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:56,120  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17276721	1000	EXEC_RUNTIME	11.382756	CURKU	110592	PROGRESS	2065563648	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:56,122  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2065563648","speedList":["17276721"],"status":"running","total":"208827064576"} 
-2021-11-21 18:19:59,145  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17391633	1000	EXEC_RUNTIME	8.379229	CURKU	119808	PROGRESS	2123735040	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:19:59,146  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2123735040","speedList":["17391633"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:02,176  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17274952	1000	EXEC_RUNTIME	11.153779	CURKU	119808	PROGRESS	2170036224	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:02,179  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2170036224","speedList":["17274952"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:05,194  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17357657	1000	EXEC_RUNTIME	8.797318	CURKU	119808	PROGRESS	2227249152	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:05,196  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2227249152","speedList":["17357657"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:08,219  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17641260	1000	EXEC_RUNTIME	7.902340	CURKU	129024	PROGRESS	2296922112	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:08,220  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2296922112","speedList":["17641260"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:11,248  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17760183	1000	EXEC_RUNTIME	8.943100	CURKU	129024	PROGRESS	2358263808	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:11,250  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2358263808","speedList":["17760183"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:14,268  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17710008	1000	EXEC_RUNTIME	9.980783	CURKU	129024	PROGRESS	2408398848	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:14,269  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2408398848","speedList":["17710008"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:17,285  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	13211035	1000	EXEC_RUNTIME	12.084794	CURKU	138240	PROGRESS	2447990784	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:17,287  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2447990784","speedList":["13211035"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:20,308  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	14915372	1000	EXEC_RUNTIME	9.967421	CURKU	138240	PROGRESS	2497536000	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:20,310  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2497536000","speedList":["14915372"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:23,331  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16351869	1000	EXEC_RUNTIME	8.356061	CURKU	138240	PROGRESS	2555338752	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:23,333  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2555338752","speedList":["16351869"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:26,357  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16549694	1000	EXEC_RUNTIME	9.739750	CURKU	147456	PROGRESS	2607022080	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:26,360  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2607022080","speedList":["16549694"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:29,370  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17003490	1000	EXEC_RUNTIME	9.341656	CURKU	147456	PROGRESS	2663645184	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:29,372  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2663645184","speedList":["17003490"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:32,387  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17271145	1000	EXEC_RUNTIME	9.037570	CURKU	147456	PROGRESS	2719678464	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:32,389  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2719678464","speedList":["17271145"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:35,411  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17022637	1000	EXEC_RUNTIME	9.988067	CURKU	156672	PROGRESS	2766643200	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:35,415  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2766643200","speedList":["17022637"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:38,433  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17118208	1000	EXEC_RUNTIME	8.941488	CURKU	156672	PROGRESS	2820612096	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:38,434  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2820612096","speedList":["17118208"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:41,445  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17437159	1000	EXEC_RUNTIME	8.689478	CURKU	156672	PROGRESS	2880774144	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:41,447  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2880774144","speedList":["17437159"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:44,467  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17506037	1000	EXEC_RUNTIME	9.349085	CURKU	165888	PROGRESS	2935406592	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:44,468  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2935406592","speedList":["17506037"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:47,481  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17636328	1000	EXEC_RUNTIME	8.681013	CURKU	165888	PROGRESS	2992324608	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:47,482  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2992324608","speedList":["17636328"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:50,496  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17581436	1000	EXEC_RUNTIME	9.194746	CURKU	165888	PROGRESS	3043639296	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:50,500  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3043639296","speedList":["17581436"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:53,522  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17574125	1000	EXEC_RUNTIME	9.593585	CURKU	175104	PROGRESS	3096502272	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:53,524  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3096502272","speedList":["17574125"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:56,540  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17569376	1000	EXEC_RUNTIME	9.585888	CURKU	175104	PROGRESS	3149291520	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:56,542  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3149291520","speedList":["17569376"],"status":"running","total":"208827064576"} 
-2021-11-21 18:20:59,559  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17649136	1000	EXEC_RUNTIME	9.712775	CURKU	175104	PROGRESS	3205914624	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:20:59,562  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3205914624","speedList":["17649136"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:02,575  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17606943	1000	EXEC_RUNTIME	9.345792	CURKU	184320	PROGRESS	3257303040	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:02,576  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3257303040","speedList":["17606943"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:05,598  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17534173	1000	EXEC_RUNTIME	9.948969	CURKU	184320	PROGRESS	3306553344	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:05,600  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3306553344","speedList":["17534173"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:08,619  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17260898	1000	EXEC_RUNTIME	12.492086	CURKU	184320	PROGRESS	3344891904	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:08,620  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3344891904","speedList":["17260898"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:11,642  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17115870	1000	EXEC_RUNTIME	11.201716	CURKU	184320	PROGRESS	3388833792	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:11,644  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3388833792","speedList":["17115870"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:14,665  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17136984	1000	EXEC_RUNTIME	9.013347	CURKU	193536	PROGRESS	3441696768	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:14,668  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3441696768","speedList":["17136984"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:17,688  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17019072	1000	EXEC_RUNTIME	10.748137	CURKU	193536	PROGRESS	3486228480	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:17,691  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3486228480","speedList":["17019072"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:20,714  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17164698	1000	EXEC_RUNTIME	9.117881	CURKU	193536	PROGRESS	3547275264	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:20,718  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3547275264","speedList":["17164698"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:23,730  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17153020	1000	EXEC_RUNTIME	10.344254	CURKU	202752	PROGRESS	3598368768	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:23,734  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3598368768","speedList":["17153020"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:26,763  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	13721969	1000	EXEC_RUNTIME	11.195679	CURKU	202752	PROGRESS	3639951360	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:26,765  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3639951360","speedList":["13721969"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:29,780  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	13026914	1000	EXEC_RUNTIME	12.383249	CURKU	202752	PROGRESS	3678584832	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:29,781  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3678584832","speedList":["13026914"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:32,808  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	12870100	1000	EXEC_RUNTIME	12.039677	CURKU	202752	PROGRESS	3716628480	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:32,810  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3716628480","speedList":["12870100"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:35,822  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	13269342	1000	EXEC_RUNTIME	10.960102	CURKU	211968	PROGRESS	3759759360	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:35,823  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3759759360","speedList":["13269342"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:38,869  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	13560135	1000	EXEC_RUNTIME	11.731487	CURKU	211968	PROGRESS	3803996160	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:38,875  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3803996160","speedList":["13560135"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:41,882  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	13598219	1000	EXEC_RUNTIME	10.510546	CURKU	211968	PROGRESS	3845578752	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:41,883  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3845578752","speedList":["13598219"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:44,899  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	13367551	1000	EXEC_RUNTIME	12.597966	CURKU	211968	PROGRESS	3882147840	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:44,900  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3882147840","speedList":["13367551"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:47,922  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	13471812	1000	EXEC_RUNTIME	10.911220	CURKU	221184	PROGRESS	3924983808	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:47,923  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3924983808","speedList":["13471812"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:50,940  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	13435113	1000	EXEC_RUNTIME	12.079373	CURKU	221184	PROGRESS	3964796928	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:50,941  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3964796928","speedList":["13435113"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:53,965  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	13447682	1000	EXEC_RUNTIME	12.218346	CURKU	221184	PROGRESS	4005789696	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:53,967  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4005789696","speedList":["13447682"],"status":"running","total":"208827064576"} 
-2021-11-21 18:21:56,997  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	13389405	1000	EXEC_RUNTIME	12.161429	CURKU	221184	PROGRESS	4044423168	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:21:57,000  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4044423168","speedList":["13389405"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:00,008  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	13736623	1000	EXEC_RUNTIME	10.487226	CURKU	230400	PROGRESS	4096991232	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:00,009  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4096991232","speedList":["13736623"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:03,033  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	14264654	1000	EXEC_RUNTIME	9.237549	CURKU	230400	PROGRESS	4157448192	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:03,034  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4157448192","speedList":["14264654"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:06,051  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	14652320	1000	EXEC_RUNTIME	10.936775	CURKU	239616	PROGRESS	4217683968	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:06,051  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4217683968","speedList":["14652320"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:09,060  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	15099710	1000	EXEC_RUNTIME	9.100656	CURKU	239616	PROGRESS	4281090048	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:09,061  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4281090048","speedList":["15099710"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:12,095  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	15390182	1000	EXEC_RUNTIME	8.358988	CURKU	239616	PROGRESS	4340662272	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:12,096  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4340662272","speedList":["15390182"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:15,116  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	15793037	1000	EXEC_RUNTIME	8.477088	CURKU	248832	PROGRESS	4407386112	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:15,117  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4407386112","speedList":["15793037"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:18,141  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16059377	1000	EXEC_RUNTIME	8.450702	CURKU	248832	PROGRESS	4469022720	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:18,145  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4469022720","speedList":["16059377"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:21,159  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16247369	1000	EXEC_RUNTIME	9.803139	CURKU	248832	PROGRESS	4528300032	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:21,160  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4528300032","speedList":["16247369"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:24,175  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16419887	1000	EXEC_RUNTIME	8.158222	CURKU	258048	PROGRESS	4585881600	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:24,177  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4585881600","speedList":["16419887"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:27,193  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16500395	1000	EXEC_RUNTIME	9.173731	CURKU	258048	PROGRESS	4641914880	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:27,195  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4641914880","speedList":["16500395"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:30,215  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16638160	1000	EXEC_RUNTIME	8.274339	CURKU	267264	PROGRESS	4700676096	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:30,216  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4700676096","speedList":["16638160"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:33,240  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16685128	1000	EXEC_RUNTIME	8.835974	CURKU	267264	PROGRESS	4754055168	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:33,241  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4754055168","speedList":["16685128"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:36,254  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16801035	1000	EXEC_RUNTIME	9.093987	CURKU	267264	PROGRESS	4812742656	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:36,255  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4812742656","speedList":["16801035"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:39,282  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21006831	1000	EXEC_RUNTIME	8.195421	CURKU	276480	PROGRESS	4876222464	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:39,284  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4876222464","speedList":["21006831"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:42,322  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20905942	1000	EXEC_RUNTIME	8.429024	CURKU	276480	PROGRESS	4939038720	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:42,325  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4939038720","speedList":["20905942"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:45,332  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20354219	1000	EXEC_RUNTIME	9.213069	CURKU	276480	PROGRESS	4998021120	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:45,333  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4998021120","speedList":["20354219"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:48,349  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19715633	1000	EXEC_RUNTIME	10.157026	CURKU	285696	PROGRESS	5052063744	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:48,349  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5052063744","speedList":["19715633"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:51,390  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19152130	1000	EXEC_RUNTIME	11.100714	CURKU	285696	PROGRESS	5103673344	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:51,399  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5103673344","speedList":["19152130"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:54,428  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18844155	1000	EXEC_RUNTIME	10.370445	CURKU	285696	PROGRESS	5156462592	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:54,429  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5156462592","speedList":["18844155"],"status":"running","total":"208827064576"} 
-2021-11-21 18:22:57,447  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19054056	1000	EXEC_RUNTIME	8.483221	CURKU	294912	PROGRESS	5217583104	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:22:57,449  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5217583104","speedList":["19054056"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:00,479  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19262655	1000	EXEC_RUNTIME	8.769547	CURKU	294912	PROGRESS	5280104448	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:00,480  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5280104448","speedList":["19262655"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:03,493  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19019587	1000	EXEC_RUNTIME	10.526757	CURKU	294912	PROGRESS	5332008960	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:03,496  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5332008960","speedList":["19019587"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:06,520  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18796842	1000	EXEC_RUNTIME	11.194357	CURKU	304128	PROGRESS	5382807552	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:06,522  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5382807552","speedList":["18796842"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:09,542  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18668183	1000	EXEC_RUNTIME	11.807000	CURKU	304128	PROGRESS	5435596800	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:09,543  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5435596800","speedList":["18668183"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:12,567  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18681652	1000	EXEC_RUNTIME	10.882580	CURKU	304128	PROGRESS	5492514816	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:12,570  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5492514816","speedList":["18681652"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:15,585  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18517209	1000	EXEC_RUNTIME	11.978133	CURKU	313344	PROGRESS	5542723584	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:15,586  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5542723584","speedList":["18517209"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:18,607  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18411009	1000	EXEC_RUNTIME	10.566589	CURKU	313344	PROGRESS	5594038272	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:18,608  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5594038272","speedList":["18411009"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:21,630  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18451168	1000	EXEC_RUNTIME	9.780936	CURKU	313344	PROGRESS	5651546112	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:21,632  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5651546112","speedList":["18451168"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:24,648  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18395743	1000	EXEC_RUNTIME	10.237249	CURKU	322560	PROGRESS	5704409088	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:24,650  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5704409088","speedList":["18395743"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:27,665  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18234175	1000	EXEC_RUNTIME	10.513190	CURKU	322560	PROGRESS	5751595008	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:27,666  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5751595008","speedList":["18234175"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:30,678  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18204087	1000	EXEC_RUNTIME	9.764997	CURKU	322560	PROGRESS	5805268992	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:30,679  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5805268992","speedList":["18204087"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:33,706  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18200279	1000	EXEC_RUNTIME	9.654458	CURKU	331776	PROGRESS	5859901440	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:33,710  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5859901440","speedList":["18200279"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:36,716  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18086116	1000	EXEC_RUNTIME	11.084765	CURKU	331776	PROGRESS	5907972096	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:36,717  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5907972096","speedList":["18086116"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:39,733  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18070191	1000	EXEC_RUNTIME	9.446552	CURKU	331776	PROGRESS	5961351168	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:39,736  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5961351168","speedList":["18070191"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:42,765  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18090223	1000	EXEC_RUNTIME	7.949868	CURKU	340992	PROGRESS	6017458176	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:42,767  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6017458176","speedList":["18090223"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:45,782  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19992584	1000	EXEC_RUNTIME	8.088956	CURKU	340992	PROGRESS	6078210048	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:45,784  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6078210048","speedList":["19992584"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:48,806  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19168965	1000	EXEC_RUNTIME	8.767157	CURKU	340992	PROGRESS	6133948416	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:48,808  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6133948416","speedList":["19168965"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:51,819  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19361416	1000	EXEC_RUNTIME	8.659435	CURKU	350208	PROGRESS	6193594368	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:51,820  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6193594368","speedList":["19361416"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:54,844  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19549065	1000	EXEC_RUNTIME	8.346507	CURKU	350208	PROGRESS	6254051328	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:54,845  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6254051328","speedList":["19549065"],"status":"running","total":"208827064576"} 
-2021-11-21 18:23:57,874  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19671582	1000	EXEC_RUNTIME	8.741952	CURKU	350208	PROGRESS	6315098112	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:23:57,876  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6315098112","speedList":["19671582"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:00,896  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19933405	1000	EXEC_RUNTIME	7.900890	CURKU	359424	PROGRESS	6379167744	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:00,898  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6379167744","speedList":["19933405"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:03,917  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20078191	1000	EXEC_RUNTIME	8.351638	CURKU	359424	PROGRESS	6442278912	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:03,920  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6442278912","speedList":["20078191"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:06,936  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20160796	1000	EXEC_RUNTIME	8.300554	CURKU	368640	PROGRESS	6504873984	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:06,937  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6504873984","speedList":["20160796"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:09,955  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20186929	1000	EXEC_RUNTIME	8.258918	CURKU	368640	PROGRESS	6566510592	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:09,956  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6566510592","speedList":["20186929"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:12,982  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20158169	1000	EXEC_RUNTIME	8.512715	CURKU	368640	PROGRESS	6626672640	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:12,983  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6626672640","speedList":["20158169"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:15,997  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20209409	1000	EXEC_RUNTIME	8.203607	CURKU	377856	PROGRESS	6689267712	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:15,999  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6689267712","speedList":["20209409"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:19,014  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20331699	1000	EXEC_RUNTIME	8.359829	CURKU	377856	PROGRESS	6754738176	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:19,018  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6754738176","speedList":["20331699"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:22,033  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20454094	1000	EXEC_RUNTIME	8.128887	CURKU	387072	PROGRESS	6820577280	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:22,034  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6820577280","speedList":["20454094"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:25,050  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20413317	1000	EXEC_RUNTIME	8.730243	CURKU	387072	PROGRESS	6880444416	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:25,051  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6880444416","speedList":["20413317"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:28,064  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20296218	1000	EXEC_RUNTIME	8.599769	CURKU	387072	PROGRESS	6937067520	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:28,066  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6937067520","speedList":["20296218"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:31,084  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20201697	1000	EXEC_RUNTIME	8.748835	CURKU	396288	PROGRESS	6993764352	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:31,087  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6993764352","speedList":["20201697"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:34,096  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20127705	1000	EXEC_RUNTIME	8.447503	CURKU	396288	PROGRESS	7050977280	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:34,097  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7050977280","speedList":["20127705"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:37,111  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20112212	1000	EXEC_RUNTIME	9.052333	CURKU	396288	PROGRESS	7110844416	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:37,112  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7110844416","speedList":["20112212"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:40,129  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20177748	1000	EXEC_RUNTIME	8.487374	CURKU	405504	PROGRESS	7175208960	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:40,130  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7175208960","speedList":["20177748"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:43,143  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	22759945	1000	EXEC_RUNTIME	8.484090	CURKU	405504	PROGRESS	7240974336	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:43,146  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7240974336","speedList":["22759945"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:46,163  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	22552255	1000	EXEC_RUNTIME	7.683348	CURKU	414720	PROGRESS	7309172736	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:46,164  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7309172736","speedList":["22552255"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:49,181  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	22113889	1000	EXEC_RUNTIME	8.594571	CURKU	414720	PROGRESS	7374348288	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:49,182  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7374348288","speedList":["22113889"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:52,194  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	22099827	1000	EXEC_RUNTIME	8.419111	CURKU	414720	PROGRESS	7440998400	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:52,195  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7440998400","speedList":["22099827"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:55,213  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	22026809	1000	EXEC_RUNTIME	8.581579	CURKU	423936	PROGRESS	7506837504	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:55,214  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7506837504","speedList":["22026809"],"status":"running","total":"208827064576"} 
-2021-11-21 18:24:58,234  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21990150	1000	EXEC_RUNTIME	8.563120	CURKU	423936	PROGRESS	7572602880	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:24:58,235  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7572602880","speedList":["21990150"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:01,284  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21683746	1000	EXEC_RUNTIME	9.167540	CURKU	433152	PROGRESS	7634018304	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:01,285  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7634018304","speedList":["21683746"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:04,297  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21522469	1000	EXEC_RUNTIME	8.391306	CURKU	433152	PROGRESS	7695949824	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:04,298  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7695949824","speedList":["21522469"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:07,317  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21470897	1000	EXEC_RUNTIME	8.235278	CURKU	433152	PROGRESS	7759650816	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:07,318  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7759650816","speedList":["21470897"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:10,333  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21017870	1000	EXEC_RUNTIME	10.001975	CURKU	442368	PROGRESS	7811923968	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:10,334  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7811923968","speedList":["21017870"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:13,350  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20592934	1000	EXEC_RUNTIME	9.867593	CURKU	442368	PROGRESS	7862648832	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:13,352  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7862648832","speedList":["20592934"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:16,375  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20321009	1000	EXEC_RUNTIME	8.825948	CURKU	442368	PROGRESS	7916027904	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:16,376  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7916027904","speedList":["20321009"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:19,391  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20191904	1000	EXEC_RUNTIME	10.226532	CURKU	451584	PROGRESS	7972429824	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:19,392  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7972429824","speedList":["20191904"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:22,414  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20049682	1000	EXEC_RUNTIME	9.371380	CURKU	451584	PROGRESS	8027873280	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:22,417  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8027873280","speedList":["20049682"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:25,436  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19584591	1000	EXEC_RUNTIME	11.813100	CURKU	451584	PROGRESS	8068571136	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:25,437  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8068571136","speedList":["19584591"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:28,454  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19213292	1000	EXEC_RUNTIME	11.029569	CURKU	460800	PROGRESS	8111112192	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:28,455  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8111112192","speedList":["19213292"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:31,469  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19203551	1000	EXEC_RUNTIME	8.732256	CURKU	460800	PROGRESS	8168325120	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:31,470  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8168325120","speedList":["19203551"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:34,491  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19087399	1000	EXEC_RUNTIME	9.343589	CURKU	460800	PROGRESS	8220524544	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:34,492  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8220524544","speedList":["19087399"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:37,505  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19219105	1000	EXEC_RUNTIME	8.230022	CURKU	470016	PROGRESS	8285184000	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:37,508  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8285184000","speedList":["19219105"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:40,520  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19403471	1000	EXEC_RUNTIME	7.707204	CURKU	470016	PROGRESS	8353898496	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:40,522  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8353898496","speedList":["19403471"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:43,535  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19598292	1000	EXEC_RUNTIME	7.785025	CURKU	479232	PROGRESS	8424161280	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:43,536  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8424161280","speedList":["19598292"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:46,547  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23964610	1000	EXEC_RUNTIME	7.568755	CURKU	479232	PROGRESS	8496709632	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:46,548  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8496709632","speedList":["23964610"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:49,565  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23903855	1000	EXEC_RUNTIME	7.813221	CURKU	479232	PROGRESS	8568668160	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:49,566  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8568668160","speedList":["23903855"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:52,584  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23864477	1000	EXEC_RUNTIME	7.775970	CURKU	488448	PROGRESS	8640405504	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:52,585  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8640405504","speedList":["23864477"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:55,606  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	24002720	1000	EXEC_RUNTIME	7.455295	CURKU	488448	PROGRESS	8714133504	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:55,607  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8714133504","speedList":["24002720"],"status":"running","total":"208827064576"} 
-2021-11-21 18:25:58,624  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23926317	1000	EXEC_RUNTIME	7.807623	CURKU	497664	PROGRESS	8785575936	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:25:58,625  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8785575936","speedList":["23926317"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:01,641  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23956070	1000	EXEC_RUNTIME	7.518833	CURKU	497664	PROGRESS	8858124288	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:01,642  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8858124288","speedList":["23956070"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:04,654  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23849096	1000	EXEC_RUNTIME	7.714862	CURKU	506880	PROGRESS	8928387072	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:04,655  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8928387072","speedList":["23849096"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:07,668  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23890547	1000	EXEC_RUNTIME	7.458622	CURKU	506880	PROGRESS	9000935424	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:07,670  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9000935424","speedList":["23890547"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:10,679  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23842865	1000	EXEC_RUNTIME	7.541657	CURKU	516096	PROGRESS	9071788032	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:10,679  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9071788032","speedList":["23842865"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:13,693  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23845552	1000	EXEC_RUNTIME	7.690898	CURKU	516096	PROGRESS	9143746560	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:13,694  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9143746560","speedList":["23845552"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:16,715  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23836886	1000	EXEC_RUNTIME	7.804301	CURKU	516096	PROGRESS	9215410176	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:16,716  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9215410176","speedList":["23836886"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:19,731  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23757144	1000	EXEC_RUNTIME	7.889249	CURKU	525312	PROGRESS	9284493312	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:19,733  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9284493312","speedList":["23757144"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:22,749  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23593913	1000	EXEC_RUNTIME	8.267390	CURKU	525312	PROGRESS	9349963776	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:22,750  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9349963776","speedList":["23593913"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:25,771  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23034101	1000	EXEC_RUNTIME	9.762505	CURKU	534528	PROGRESS	9398108160	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:25,772  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9398108160","speedList":["23034101"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:28,795  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	22589068	1000	EXEC_RUNTIME	9.701942	CURKU	534528	PROGRESS	9447948288	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:28,796  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9447948288","speedList":["22589068"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:31,812  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	22446329	1000	EXEC_RUNTIME	8.574952	CURKU	534528	PROGRESS	9509289984	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:31,814  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9509289984","speedList":["22446329"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:34,827  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	22321276	1000	EXEC_RUNTIME	8.552295	CURKU	543744	PROGRESS	9570705408	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:34,829  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9570705408","speedList":["22321276"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:37,841  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	22150744	1000	EXEC_RUNTIME	8.570809	CURKU	543744	PROGRESS	9628803072	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:37,842  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9628803072","speedList":["22150744"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:40,852  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19917243	1000	EXEC_RUNTIME	10.843336	CURKU	543744	PROGRESS	9684246528	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:40,853  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9684246528","speedList":["19917243"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:43,865  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19882862	1000	EXEC_RUNTIME	12.710664	CURKU	552960	PROGRESS	9743597568	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:43,865  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9743597568","speedList":["19882862"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:46,880  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20702038	1000	EXEC_RUNTIME	10.008545	CURKU	552960	PROGRESS	9810247680	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:46,880  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9810247680","speedList":["20702038"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:49,893  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20668745	1000	EXEC_RUNTIME	11.925492	CURKU	552960	PROGRESS	9872179200	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:49,893  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9872179200","speedList":["20668745"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:52,916  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21347494	1000	EXEC_RUNTIME	7.308752	CURKU	562176	PROGRESS	9943916544	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:52,917  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9943916544","speedList":["21347494"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:55,939  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20630366	1000	EXEC_RUNTIME	9.916147	CURKU	562176	PROGRESS	9996410880	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:55,941  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"9996410880","speedList":["20630366"],"status":"running","total":"208827064576"} 
-2021-11-21 18:26:58,967  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19500083	1000	EXEC_RUNTIME	12.854437	CURKU	562176	PROGRESS	10036518912	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:26:58,969  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10036518912","speedList":["19500083"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:01,977  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19046394	1000	EXEC_RUNTIME	9.636310	CURKU	571392	PROGRESS	10084958208	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:01,978  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10084958208","speedList":["19046394"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:04,993  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19294702	1000	EXEC_RUNTIME	8.170168	CURKU	571392	PROGRESS	10148659200	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:04,994  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10148659200","speedList":["19294702"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:08,011  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19389324	1000	EXEC_RUNTIME	7.859951	CURKU	580608	PROGRESS	10209779712	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:08,011  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10209779712","speedList":["19389324"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:11,029  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19708613	1000	EXEC_RUNTIME	7.978431	CURKU	580608	PROGRESS	10278494208	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:11,030  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10278494208","speedList":["19708613"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:14,045  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19730262	1000	EXEC_RUNTIME	9.028732	CURKU	580608	PROGRESS	10338656256	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:14,047  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10338656256","speedList":["19730262"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:17,060  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19950857	1000	EXEC_RUNTIME	8.353667	CURKU	589824	PROGRESS	10406559744	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:17,061  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10406559744","speedList":["19950857"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:20,076  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20188462	1000	EXEC_RUNTIME	7.907993	CURKU	589824	PROGRESS	10476453888	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:20,077  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10476453888","speedList":["20188462"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:23,095  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20351928	1000	EXEC_RUNTIME	8.058321	CURKU	599040	PROGRESS	10544357376	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:23,096  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10544357376","speedList":["20351928"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:26,112  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20268657	1000	EXEC_RUNTIME	8.921966	CURKU	599040	PROGRESS	10601865216	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:26,117  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10601865216","speedList":["20268657"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:29,130  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20217271	1000	EXEC_RUNTIME	8.323947	CURKU	599040	PROGRESS	10660552704	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:29,132  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10660552704","speedList":["20217271"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:32,152  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20121273	1000	EXEC_RUNTIME	8.849655	CURKU	608256	PROGRESS	10716659712	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:32,154  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10716659712","speedList":["20121273"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:35,174  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20159199	1000	EXEC_RUNTIME	8.388194	CURKU	608256	PROGRESS	10779475968	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:35,176  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10779475968","speedList":["20159199"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:38,199  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20248275	1000	EXEC_RUNTIME	7.825996	CURKU	608256	PROGRESS	10845536256	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:38,200  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10845536256","speedList":["20248275"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:41,216  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21750355	1000	EXEC_RUNTIME	8.133981	CURKU	617472	PROGRESS	10910490624	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:41,217  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10910490624","speedList":["21750355"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:44,235  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21284807	1000	EXEC_RUNTIME	8.220369	CURKU	617472	PROGRESS	10973601792	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:44,236  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"10973601792","speedList":["21284807"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:47,252  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21371446	1000	EXEC_RUNTIME	8.572535	CURKU	626688	PROGRESS	11038556160	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:47,255  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11038556160","speedList":["21371446"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:50,274  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	21565981	1000	EXEC_RUNTIME	8.004695	CURKU	626688	PROGRESS	11105501184	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:50,275  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11105501184","speedList":["21565981"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:53,294  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20846736	1000	EXEC_RUNTIME	8.615946	CURKU	626688	PROGRESS	11160059904	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:53,295  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11160059904","speedList":["20846736"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:56,318  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20648097	1000	EXEC_RUNTIME	8.322404	CURKU	635904	PROGRESS	11219410944	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:56,320  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11219410944","speedList":["20648097"],"status":"running","total":"208827064576"} 
-2021-11-21 18:27:59,336  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20303107	1000	EXEC_RUNTIME	9.593903	CURKU	635904	PROGRESS	11274854400	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:27:59,337  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11274854400","speedList":["20303107"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:02,365  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20268479	1000	EXEC_RUNTIME	9.481479	CURKU	635904	PROGRESS	11335606272	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:02,367  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11335606272","speedList":["20268479"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:05,384  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19826735	1000	EXEC_RUNTIME	10.535432	CURKU	645120	PROGRESS	11384930304	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:05,385  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11384930304","speedList":["19826735"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:08,406  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19592831	1000	EXEC_RUNTIME	9.231452	CURKU	645120	PROGRESS	11438014464	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:08,408  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11438014464","speedList":["19592831"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:11,420  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19289714	1000	EXEC_RUNTIME	9.886782	CURKU	645120	PROGRESS	11487264768	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:11,420  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11487264768","speedList":["19289714"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:14,431  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18945265	1000	EXEC_RUNTIME	10.654096	CURKU	654336	PROGRESS	11533049856	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:14,432  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11533049856","speedList":["18945265"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:17,449  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18785003	1000	EXEC_RUNTIME	10.005299	CURKU	654336	PROGRESS	11583774720	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:17,451  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11583774720","speedList":["18785003"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:20,480  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18634488	1000	EXEC_RUNTIME	10.028703	CURKU	654336	PROGRESS	11634204672	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:20,481  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11634204672","speedList":["18634488"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:23,501  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18747972	1000	EXEC_RUNTIME	8.643094	CURKU	663552	PROGRESS	11695915008	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:23,502  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11695915008","speedList":["18747972"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:26,521  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18737980	1000	EXEC_RUNTIME	9.016874	CURKU	663552	PROGRESS	11751948288	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:26,523  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11751948288","speedList":["18737980"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:29,538  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18882873	1000	EXEC_RUNTIME	8.141103	CURKU	663552	PROGRESS	11815944192	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:29,539  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11815944192","speedList":["18882873"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:32,553  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18963436	1000	EXEC_RUNTIME	8.659441	CURKU	672768	PROGRESS	11877064704	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:32,554  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11877064704","speedList":["18963436"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:35,564  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19178703	1000	EXEC_RUNTIME	7.760601	CURKU	672768	PROGRESS	11946663936	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:35,564  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"11946663936","speedList":["19178703"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:38,582  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19429320	1000	EXEC_RUNTIME	7.557713	CURKU	681984	PROGRESS	12019286016	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:38,584  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12019286016","speedList":["19429320"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:41,603  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17207629	1000	EXEC_RUNTIME	10.005559	CURKU	681984	PROGRESS	12076498944	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:41,604  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12076498944","speedList":["17207629"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:44,628  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18822503	1000	EXEC_RUNTIME	8.849070	CURKU	681984	PROGRESS	12134596608	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:44,629  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12134596608","speedList":["18822503"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:47,644  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18131645	1000	EXEC_RUNTIME	9.918860	CURKU	691200	PROGRESS	12186869760	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:47,645  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12186869760","speedList":["18131645"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:50,674  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18081805	1000	EXEC_RUNTIME	9.624792	CURKU	691200	PROGRESS	12240838656	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:50,676  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12240838656","speedList":["18081805"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:53,694  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17233941	1000	EXEC_RUNTIME	11.572484	CURKU	691200	PROGRESS	12284780544	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:53,696  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12284780544","speedList":["17233941"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:56,720  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16521251	1000	EXEC_RUNTIME	12.012125	CURKU	700416	PROGRESS	12325552128	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:56,721  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12325552128","speedList":["16521251"],"status":"running","total":"208827064576"} 
-2021-11-21 18:28:59,750  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16451749	1000	EXEC_RUNTIME	10.409410	CURKU	700416	PROGRESS	12374212608	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:28:59,751  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12374212608","speedList":["16451749"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:02,771  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16156672	1000	EXEC_RUNTIME	11.301045	CURKU	700416	PROGRESS	12417564672	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:02,771  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12417564672","speedList":["16156672"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:05,793  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	15822026	1000	EXEC_RUNTIME	12.077501	CURKU	700416	PROGRESS	12457967616	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:05,794  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12457967616","speedList":["15822026"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:08,811  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	15584121	1000	EXEC_RUNTIME	11.711627	CURKU	709632	PROGRESS	12499329024	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:08,813  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12499329024","speedList":["15584121"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:11,829  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	15341532	1000	EXEC_RUNTIME	11.714757	CURKU	709632	PROGRESS	12538552320	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:11,830  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12538552320","speedList":["15341532"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:14,849  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	15557694	1000	EXEC_RUNTIME	9.355056	CURKU	709632	PROGRESS	12592521216	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:14,850  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12592521216","speedList":["15557694"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:17,882  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	15616699	1000	EXEC_RUNTIME	10.107133	CURKU	718848	PROGRESS	12641845248	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:17,883  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12641845248","speedList":["15616699"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:20,896  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	15927166	1000	EXEC_RUNTIME	8.489545	CURKU	718848	PROGRESS	12701417472	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:20,897  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12701417472","speedList":["15927166"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:23,912  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16024793	1000	EXEC_RUNTIME	9.873377	CURKU	718848	PROGRESS	12753616896	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:23,914  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12753616896","speedList":["16024793"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:26,938  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	15959260	1000	EXEC_RUNTIME	10.477417	CURKU	728064	PROGRESS	12798812160	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:26,939  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12798812160","speedList":["15959260"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:29,962  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16066860	1000	EXEC_RUNTIME	8.973865	CURKU	728064	PROGRESS	12852486144	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:29,963  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12852486144","speedList":["16066860"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:32,981  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16292757	1000	EXEC_RUNTIME	8.838593	CURKU	728064	PROGRESS	12912943104	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:32,982  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12912943104","speedList":["16292757"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:36,011  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16362451	1000	EXEC_RUNTIME	9.802244	CURKU	737280	PROGRESS	12966100992	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:36,013  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"12966100992","speedList":["16362451"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:39,027  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16307718	1000	EXEC_RUNTIME	10.776459	CURKU	737280	PROGRESS	13012107264	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:39,029  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13012107264","speedList":["16307718"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:42,044  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16409448	1000	EXEC_RUNTIME	10.708682	CURKU	737280	PROGRESS	13067550720	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:42,045  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13067550720","speedList":["16409448"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:45,063  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16495767	1000	EXEC_RUNTIME	9.858790	CURKU	746496	PROGRESS	13122772992	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:45,065  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13122772992","speedList":["16495767"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:48,084  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16837225	1000	EXEC_RUNTIME	7.461043	CURKU	746496	PROGRESS	13195616256	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:48,085  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13195616256","speedList":["16837225"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:51,113  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17046404	1000	EXEC_RUNTIME	7.772571	CURKU	746496	PROGRESS	13261381632	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:51,113  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13261381632","speedList":["17046404"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:54,128  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23912328	1000	EXEC_RUNTIME	7.705785	CURKU	755712	PROGRESS	13333413888	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:54,128  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13333413888","speedList":["23912328"],"status":"running","total":"208827064576"} 
-2021-11-21 18:29:57,144  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23631670	1000	EXEC_RUNTIME	7.920810	CURKU	755712	PROGRESS	13403897856	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:29:57,144  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13403897856","speedList":["23631670"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:00,162  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	22055031	1000	EXEC_RUNTIME	9.322340	CURKU	764928	PROGRESS	13461479424	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:00,163  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13461479424","speedList":["22055031"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:03,177  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20695141	1000	EXEC_RUNTIME	11.286966	CURKU	764928	PROGRESS	13511909376	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:03,178  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13511909376","speedList":["20695141"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:06,221  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	20141627	1000	EXEC_RUNTIME	10.101120	CURKU	764928	PROGRESS	13566173184	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:06,223  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13566173184","speedList":["20141627"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:09,241  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19532578	1000	EXEC_RUNTIME	10.263154	CURKU	774144	PROGRESS	13616676864	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:09,242  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13616676864","speedList":["19532578"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:12,264  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19666522	1000	EXEC_RUNTIME	8.087288	CURKU	774144	PROGRESS	13678608384	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:12,265  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13678608384","speedList":["19666522"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:15,284  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19505347	1000	EXEC_RUNTIME	9.784177	CURKU	774144	PROGRESS	13734051840	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:15,285  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13734051840","speedList":["19505347"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:18,310  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19395193	1000	EXEC_RUNTIME	9.480614	CURKU	783360	PROGRESS	13790158848	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:18,310  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13790158848","speedList":["19395193"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:21,321  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19267250	1000	EXEC_RUNTIME	9.970540	CURKU	783360	PROGRESS	13844717568	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:21,322  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13844717568","speedList":["19267250"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:24,349  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19029841	1000	EXEC_RUNTIME	10.810465	CURKU	783360	PROGRESS	13895147520	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:24,350  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13895147520","speedList":["19029841"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:27,372  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18660939	1000	EXEC_RUNTIME	12.024279	CURKU	792576	PROGRESS	13939458048	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:27,373  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13939458048","speedList":["18660939"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:30,389  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18453137	1000	EXEC_RUNTIME	12.216503	CURKU	792576	PROGRESS	13987823616	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:30,392  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"13987823616","speedList":["18453137"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:33,412  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18287988	1000	EXEC_RUNTIME	11.402912	CURKU	792576	PROGRESS	14036484096	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:33,413  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14036484096","speedList":["18287988"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:36,429  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18218904	1000	EXEC_RUNTIME	11.480367	CURKU	792576	PROGRESS	14088683520	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:36,430  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14088683520","speedList":["18218904"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:39,457  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18323139	1000	EXEC_RUNTIME	10.143976	CURKU	801792	PROGRESS	14148919296	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:39,458  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14148919296","speedList":["18323139"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:42,478  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18373620	1000	EXEC_RUNTIME	11.062787	CURKU	801792	PROGRESS	14206722048	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:42,479  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14206722048","speedList":["18373620"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:45,496  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18415428	1000	EXEC_RUNTIME	11.233565	CURKU	811008	PROGRESS	14264598528	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:45,497  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14264598528","speedList":["18415428"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:48,506  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18466001	1000	EXEC_RUNTIME	11.090849	CURKU	811008	PROGRESS	14322696192	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:48,508  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14322696192","speedList":["18466001"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:51,525  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18388096	1000	EXEC_RUNTIME	11.519787	CURKU	811008	PROGRESS	14374010880	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:51,526  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14374010880","speedList":["18388096"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:54,548  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18389436	1000	EXEC_RUNTIME	10.844781	CURKU	820224	PROGRESS	14429528064	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:54,549  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14429528064","speedList":["18389436"],"status":"running","total":"208827064576"} 
-2021-11-21 18:30:57,572  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16200797	1000	EXEC_RUNTIME	10.988459	CURKU	820224	PROGRESS	14484676608	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:30:57,572  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14484676608","speedList":["16200797"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:00,586  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18103151	1000	EXEC_RUNTIME	11.024602	CURKU	820224	PROGRESS	14540414976	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:00,586  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14540414976","speedList":["18103151"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:03,600  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17930499	1000	EXEC_RUNTIME	11.863263	CURKU	829440	PROGRESS	14593572864	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:03,601  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14593572864","speedList":["17930499"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:06,617  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17876856	1000	EXEC_RUNTIME	11.802582	CURKU	829440	PROGRESS	14647541760	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:06,618  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14647541760","speedList":["17876856"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:09,637  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17611768	1000	EXEC_RUNTIME	13.148897	CURKU	829440	PROGRESS	14697971712	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:09,638  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14697971712","speedList":["17611768"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:12,663  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17742800	1000	EXEC_RUNTIME	11.434339	CURKU	838656	PROGRESS	14753193984	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:12,664  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14753193984","speedList":["17742800"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:15,685  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17871431	1000	EXEC_RUNTIME	10.918673	CURKU	838656	PROGRESS	14809522176	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:15,686  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14809522176","speedList":["17871431"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:18,701  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17851946	1000	EXEC_RUNTIME	11.823042	CURKU	838656	PROGRESS	14862901248	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:18,702  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14862901248","speedList":["17851946"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:21,735  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18041103	1000	EXEC_RUNTIME	9.373805	CURKU	847872	PROGRESS	14921662464	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:21,736  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14921662464","speedList":["18041103"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:24,757  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18178245	1000	EXEC_RUNTIME	9.562975	CURKU	847872	PROGRESS	14980055040	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:24,759  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"14980055040","speedList":["18178245"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:27,773  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18290174	1000	EXEC_RUNTIME	9.341474	CURKU	847872	PROGRESS	15038447616	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:27,775  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15038447616","speedList":["18290174"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:30,797  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18297855	1000	EXEC_RUNTIME	9.476006	CURKU	857088	PROGRESS	15093669888	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:30,798  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15093669888","speedList":["18297855"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:33,821  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18335769	1000	EXEC_RUNTIME	9.616715	CURKU	857088	PROGRESS	15150587904	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:33,822  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15150587904","speedList":["18335769"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:36,838  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18501435	1000	EXEC_RUNTIME	9.372582	CURKU	857088	PROGRESS	15212519424	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:36,838  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15212519424","speedList":["18501435"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:39,857  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18513282	1000	EXEC_RUNTIME	9.454498	CURKU	866304	PROGRESS	15268921344	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:39,858  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15268921344","speedList":["18513282"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:42,892  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18278417	1000	EXEC_RUNTIME	10.838730	CURKU	866304	PROGRESS	15314042880	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:42,893  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15314042880","speedList":["18278417"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:45,916  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18232892	1000	EXEC_RUNTIME	9.983757	CURKU	866304	PROGRESS	15367421952	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:45,917  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15367421952","speedList":["18232892"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:48,936  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18318760	1000	EXEC_RUNTIME	9.504614	CURKU	875520	PROGRESS	15426772992	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:48,937  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15426772992","speedList":["18318760"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:51,951  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18247191	1000	EXEC_RUNTIME	11.468775	CURKU	875520	PROGRESS	15478087680	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:51,952  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15478087680","speedList":["18247191"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:54,998  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18196504	1000	EXEC_RUNTIME	10.099470	CURKU	875520	PROGRESS	15528812544	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:54,999  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15528812544","speedList":["18196504"],"status":"running","total":"208827064576"} 
-2021-11-21 18:31:58,028  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18150022	1000	EXEC_RUNTIME	9.616776	CURKU	884736	PROGRESS	15583150080	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:31:58,030  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15583150080","speedList":["18150022"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:01,048  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18107180	1000	EXEC_RUNTIME	11.377620	CURKU	884736	PROGRESS	15635054592	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:01,049  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15635054592","speedList":["18107180"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:04,065  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	23525207	1000	EXEC_RUNTIME	9.677735	CURKU	884736	PROGRESS	15682830336	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:04,066  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15682830336","speedList":["23525207"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:07,087  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16096460	1000	EXEC_RUNTIME	10.846497	CURKU	893952	PROGRESS	15731269632	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:07,087  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15731269632","speedList":["16096460"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:10,103  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17041945	1000	EXEC_RUNTIME	9.672922	CURKU	893952	PROGRESS	15785533440	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:10,104  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15785533440","speedList":["17041945"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:13,125  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17384378	1000	EXEC_RUNTIME	9.410920	CURKU	893952	PROGRESS	15840092160	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:13,126  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15840092160","speedList":["17384378"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:16,144  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17486188	1000	EXEC_RUNTIME	9.329433	CURKU	903168	PROGRESS	15893839872	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:16,146  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15893839872","speedList":["17486188"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:19,166  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17728127	1000	EXEC_RUNTIME	9.502282	CURKU	903168	PROGRESS	15950168064	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:19,167  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"15950168064","speedList":["17728127"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:22,182  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17722691	1000	EXEC_RUNTIME	10.137230	CURKU	903168	PROGRESS	16003547136	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:22,183  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16003547136","speedList":["17722691"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:25,202  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17853375	1000	EXEC_RUNTIME	9.155669	CURKU	912384	PROGRESS	16059949056	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:25,203  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16059949056","speedList":["17853375"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:28,228  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17699624	1000	EXEC_RUNTIME	9.710943	CURKU	912384	PROGRESS	16110084096	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:28,229  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16110084096","speedList":["17699624"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:31,278  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17534428	1000	EXEC_RUNTIME	9.738558	CURKU	912384	PROGRESS	16159334400	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:31,280  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16159334400","speedList":["17534428"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:34,294  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17497815	1000	EXEC_RUNTIME	9.328870	CURKU	921600	PROGRESS	16211312640	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:34,294  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16211312640","speedList":["17497815"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:37,316  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17525486	1000	EXEC_RUNTIME	9.771370	CURKU	921600	PROGRESS	16265281536	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:37,318  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16265281536","speedList":["17525486"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:40,334  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17594111	1000	EXEC_RUNTIME	9.443839	CURKU	921600	PROGRESS	16320430080	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:40,336  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16320430080","speedList":["17594111"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:43,367  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17493920	1000	EXEC_RUNTIME	11.081654	CURKU	930816	PROGRESS	16370049024	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:43,367  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16370049024","speedList":["17493920"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:46,390  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17409059	1000	EXEC_RUNTIME	11.123992	CURKU	930816	PROGRESS	16419299328	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:46,391  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16419299328","speedList":["17409059"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:49,424  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17174133	1000	EXEC_RUNTIME	11.357012	CURKU	930816	PROGRESS	16461471744	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:49,425  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16461471744","speedList":["17174133"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:52,439  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16958057	1000	EXEC_RUNTIME	11.682537	CURKU	930816	PROGRESS	16502759424	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:52,440  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16502759424","speedList":["16958057"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:55,458  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17015614	1000	EXEC_RUNTIME	9.010796	CURKU	940032	PROGRESS	16556802048	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:55,459  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16556802048","speedList":["17015614"],"status":"running","total":"208827064576"} 
-2021-11-21 18:32:58,485  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17084518	1000	EXEC_RUNTIME	9.926171	CURKU	940032	PROGRESS	16611950592	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:32:58,486  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16611950592","speedList":["17084518"],"status":"running","total":"208827064576"} 
-2021-11-21 18:33:01,506  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17050749	1000	EXEC_RUNTIME	10.375848	CURKU	940032	PROGRESS	16661790720	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:33:01,507  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16661790720","speedList":["17050749"],"status":"running","total":"208827064576"} 
-2021-11-21 18:33:04,522  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16845169	1000	EXEC_RUNTIME	11.187355	CURKU	949248	PROGRESS	16700792832	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:33:04,523  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16700792832","speedList":["16845169"],"status":"running","total":"208827064576"} 
-2021-11-21 18:33:07,546  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16797452	1000	EXEC_RUNTIME	9.952832	CURKU	949248	PROGRESS	16748863488	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:33:07,546  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16748863488","speedList":["16797452"],"status":"running","total":"208827064576"} 
-2021-11-21 18:33:10,562  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16884862	1000	EXEC_RUNTIME	9.347233	CURKU	949248	PROGRESS	16805486592	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:33:10,565  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16805486592","speedList":["16884862"],"status":"running","total":"208827064576"} 
-2021-11-21 18:33:13,580  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	16983519	1000	EXEC_RUNTIME	9.058283	CURKU	958464	PROGRESS	16863068160	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:33:13,583  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16863068160","speedList":["16983519"],"status":"running","total":"208827064576"} 
-2021-11-21 18:33:16,603  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	19001481	1000	EXEC_RUNTIME	8.537331	CURKU	958464	PROGRESS	16922345472	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:33:16,604  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16922345472","speedList":["19001481"],"status":"running","total":"208827064576"} 
-2021-11-21 18:33:19,615  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	17052177	1000	EXEC_RUNTIME	12.602326	CURKU	958464	PROGRESS	16970121216	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:33:19,616  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"16970121216","speedList":["17052177"],"status":"running","total":"208827064576"} 
-2021-11-21 18:33:22,634  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18008164	1000	EXEC_RUNTIME	10.850875	CURKU	967680	PROGRESS	17029472256	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:33:22,634  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"17029472256","speedList":["18008164"],"status":"running","total":"208827064576"} 
-2021-11-21 18:33:25,649  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18329386	1000	EXEC_RUNTIME	9.168803	CURKU	967680	PROGRESS	17086980096	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:33:25,649  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"17086980096","speedList":["18329386"],"status":"running","total":"208827064576"} 
-2021-11-21 18:33:28,666  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	18602613	1000	EXEC_RUNTIME	9.164917	CURKU	967680	PROGRESS	17145962496	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
-2021-11-21 18:33:28,667  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"17145962496","speedList":["18602613"],"status":"running","total":"208827064576"} 
+2021-11-24 11:29:14,344  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
+2021-11-24 11:29:14,371  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
+2021-11-24 11:29:14,373  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-11-24 11:29:14,373  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-24 11:29:14,726  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-11-24 11:29:14,727  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 4434 ms
+2021-11-24 11:29:17,020  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2021-11-24 11:29:17,021  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
+2021-11-24 11:29:18,365  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
+2021-11-24 11:29:18,403  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
+2021-11-24 11:29:18,507  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8004"]
+2021-11-24 11:29:18,611  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8004 (http) with context path '/sweeney'
+2021-11-24 11:29:22,017  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-24 11:29:22,018  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-11-24 11:29:22,052  INFO (FrameworkServlet.java:547) - Completed initialization in 34 ms
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -686,21 +31,33 @@ Caused by: java.lang.IllegalArgumentException: Value must only contain valid cha
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.2.RELEASE)
 
-2021-11-22 17:04:52,661  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
-2021-11-22 17:04:52,698  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
-2021-11-22 17:04:52,699  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-11-22 17:04:52,700  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
-2021-11-22 17:04:53,120  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-11-22 17:04:53,121  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 8593 ms
-2021-11-22 17:04:55,819  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
-2021-11-22 17:04:55,821  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
-2021-11-22 17:04:58,865  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
-2021-11-22 17:04:58,978  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
-2021-11-22 17:04:59,294  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8004"]
-2021-11-22 17:04:59,479  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8004 (http) with context path '/sweeney'
-2021-11-22 17:05:13,800  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-11-22 17:05:13,801  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-11-22 17:05:13,838  INFO (FrameworkServlet.java:547) - Completed initialization in 36 ms
+2021-11-24 11:38:33,185  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
+2021-11-24 11:38:33,205  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
+2021-11-24 11:38:33,206  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-11-24 11:38:33,206  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-24 11:38:33,580  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-11-24 11:38:33,581  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 5426 ms
+2021-11-24 11:38:36,949  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2021-11-24 11:38:36,951  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
+2021-11-24 11:38:38,312  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
+2021-11-24 11:38:38,348  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
+2021-11-24 11:38:38,438  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8004"]
+2021-11-24 11:38:38,595  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8004 (http) with context path '/sweeney'
+2021-11-24 11:38:52,030  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-24 11:38:52,031  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-11-24 11:38:52,058  INFO (FrameworkServlet.java:547) - Completed initialization in 27 ms
+2021-11-24 12:29:08,342  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	278259885	1000	EXEC_RUNTIME	9.124903	CURKU	0	PROGRESS	761266176	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:29:08,375  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"761266176","speedList":["278259885"],"status":"running","total":"208827064576"} 
+2021-11-24 12:29:11,355  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	274999097	1000	EXEC_RUNTIME	9.502991	CURKU	49152	PROGRESS	1584267264	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:29:11,356  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1584267264","speedList":["274999097"],"status":"running","total":"208827064576"} 
+2021-11-24 12:29:14,361  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	265763287	1000	EXEC_RUNTIME	10.702632	CURKU	98304	PROGRESS	2328625152	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:29:14,361  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2328625152","speedList":["265763287"],"status":"running","total":"208827064576"} 
+2021-11-24 12:29:17,378  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	257708374	1000	EXEC_RUNTIME	10.984724	CURKU	147456	PROGRESS	3035234304	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:29:17,378  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3035234304","speedList":["257708374"],"status":"running","total":"208827064576"} 
+2021-11-24 12:29:20,383  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	255797929	1000	EXEC_RUNTIME	10.223179	CURKU	196608	PROGRESS	3779592192	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:29:20,383  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3779592192","speedList":["255797929"],"status":"running","total":"208827064576"} 
+2021-11-24 12:29:23,393  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	248487883	1000	EXEC_RUNTIME	13.132677	CURKU	245760	PROGRESS	4420141056	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:29:23,393  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4420141056","speedList":["248487883"],"status":"running","total":"208827064576"} 
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -710,12 +67,78 @@ Caused by: java.lang.IllegalArgumentException: Value must only contain valid cha
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.2.RELEASE)
 
-2021-11-22 17:05:53,847  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
-2021-11-22 17:05:54,067  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
-2021-11-22 17:05:54,068  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-11-22 17:05:54,069  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
-2021-11-22 17:05:54,254  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-11-22 17:05:54,255  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 11327 ms
+2021-11-24 12:34:21,012  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
+2021-11-24 12:34:21,037  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
+2021-11-24 12:34:21,038  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-11-24 12:34:21,039  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-24 12:34:21,308  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-11-24 12:34:21,309  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 5683 ms
+2021-11-24 12:34:23,440  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2021-11-24 12:34:23,442  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
+2021-11-24 12:34:25,235  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
+2021-11-24 12:34:25,322  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
+2021-11-24 12:34:25,539  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8004"]
+2021-11-24 12:34:25,720  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8004 (http) with context path '/sweeney'
+2021-11-24 12:34:31,184  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-24 12:34:31,185  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-11-24 12:34:31,230  INFO (FrameworkServlet.java:547) - Completed initialization in 45 ms
+2021-11-24 12:34:54,206  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	133831207	1000	EXEC_RUNTIME	9.309774	CURKU	12288	PROGRESS	366968832	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:34:54,216  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"366968832","speedList":["133831207"],"status":"running","total":"208827064576"} 
+2021-11-24 12:34:57,222  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	147483511	1000	EXEC_RUNTIME	5.136729	CURKU	36864	PROGRESS	850821120	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:34:57,222  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"850821120","speedList":["147483511"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:00,236  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	157281416	1000	EXEC_RUNTIME	5.198398	CURKU	73728	PROGRESS	1380777984	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:00,238  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1380777984","speedList":["157281416"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:03,265  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	143050793	1000	EXEC_RUNTIME	5.155951	CURKU	86016	PROGRESS	1681686528	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:03,268  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1681686528","speedList":["143050793"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:06,293  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	128082860	1000	EXEC_RUNTIME	5.219090	CURKU	98304	PROGRESS	1896087552	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:06,294  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"1896087552","speedList":["128082860"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:09,307  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	117193583	1000	EXEC_RUNTIME	5.437861	CURKU	110592	PROGRESS	2091614208	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:09,308  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2091614208","speedList":["117193583"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:12,335  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	110978631	1000	EXEC_RUNTIME	5.722664	CURKU	122880	PROGRESS	2315452416	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:12,337  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2315452416","speedList":["110978631"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:15,357  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	104206815	1000	EXEC_RUNTIME	5.561146	CURKU	135168	PROGRESS	2487386112	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:15,358  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2487386112","speedList":["104206815"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:18,372  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	98403539	1000	EXEC_RUNTIME	5.459784	CURKU	147456	PROGRESS	2646736896	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:18,380  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2646736896","speedList":["98403539"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:21,380  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	95895695	1000	EXEC_RUNTIME	5.517897	CURKU	159744	PROGRESS	2869002240	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:21,381  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"2869002240","speedList":["95895695"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:24,385  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	102476873	1000	EXEC_RUNTIME	5.352709	CURKU	184320	PROGRESS	3374874624	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:24,386  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3374874624","speedList":["102476873"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:27,409  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	103231082	1000	EXEC_RUNTIME	5.583081	CURKU	208896	PROGRESS	3709304832	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:27,411  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"3709304832","speedList":["103231082"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:30,417  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	104642089	1000	EXEC_RUNTIME	5.514954	CURKU	221184	PROGRESS	4076273664	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:30,418  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4076273664","speedList":["104642089"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:33,435  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	107699183	1000	EXEC_RUNTIME	5.645286	CURKU	245760	PROGRESS	4520804352	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:33,439  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4520804352","speedList":["107699183"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:36,450  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	105801350	1000	EXEC_RUNTIME	5.566719	CURKU	270336	PROGRESS	4760862720	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:36,450  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"4760862720","speedList":["105801350"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:39,464  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	105926972	1000	EXEC_RUNTIME	5.434405	CURKU	282624	PROGRESS	5083791360	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:39,465  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5083791360","speedList":["105926972"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:42,481  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	104171751	1000	EXEC_RUNTIME	5.476420	CURKU	294912	PROGRESS	5315493888	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:42,482  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5315493888","speedList":["104171751"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:45,499  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	101620114	1000	EXEC_RUNTIME	5.533252	CURKU	307200	PROGRESS	5490573312	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:45,500  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5490573312","speedList":["101620114"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:48,511  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	101616106	1000	EXEC_RUNTIME	5.422053	CURKU	319488	PROGRESS	5797773312	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:48,512  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"5797773312","speedList":["101616106"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:51,525  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	103492803	1000	EXEC_RUNTIME	5.555839	CURKU	344064	PROGRESS	6213992448	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:51,526  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6213992448","speedList":["103492803"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:54,549  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	101558411	1000	EXEC_RUNTIME	5.635579	CURKU	356352	PROGRESS	6404800512	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:54,552  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6404800512","speedList":["101558411"],"status":"running","total":"208827064576"} 
+2021-11-24 12:35:57,556  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	66890902	1000	EXEC_RUNTIME	5.379228	CURKU	368640	PROGRESS	6600327168	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:35:57,557  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6600327168","speedList":["66890902"],"status":"running","total":"208827064576"} 
+2021-11-24 12:36:00,575  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	75949696	1000	EXEC_RUNTIME	5.692193	CURKU	380928	PROGRESS	6854049792	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:36:00,578  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"6854049792","speedList":["75949696"],"status":"running","total":"208827064576"} 
+2021-11-24 12:36:03,591  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	74484895	1000	EXEC_RUNTIME	5.494215	CURKU	393216	PROGRESS	7071596544	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:36:03,592  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7071596544","speedList":["74484895"],"status":"running","total":"208827064576"} 
+2021-11-24 12:36:06,612  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	75779725	1000	EXEC_RUNTIME	5.531263	CURKU	405504	PROGRESS	7308017664	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:36:06,613  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7308017664","speedList":["75779725"],"status":"running","total":"208827064576"} 
+2021-11-24 12:36:09,617  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	89211229	1000	EXEC_RUNTIME	5.379241	CURKU	430080	PROGRESS	7739965440	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:36:09,618  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"7739965440","speedList":["89211229"],"status":"running","total":"208827064576"} 
+2021-11-24 12:36:12,641  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	3	SPEED	97344072	1000	EXEC_RUNTIME	5.100255	CURKU	454656	PROGRESS	8153038848	208827064576	RECHASH	0	1	RECSALT	0	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:36:12,642  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8153038848","speedList":["97344072"],"status":"running","total":"208827064576"} 
+2021-11-24 12:36:15,100  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = 22691aaa0d954f34614df234b55a7a55:loveluna 
+2021-11-24 12:36:15,100  INFO [hashcat-core-0] (HashcatCore.java:167) - init::line = STATUS	6	SPEED	111010917	1000	EXEC_RUNTIME	4.828416	CURKU	491520	PROGRESS	8673558528	208827064576	RECHASH	1	1	RECSALT	1	1	REJECTED	0	UTIL	-1	 
+2021-11-24 12:36:15,101  INFO [hashcat-core-0] (HashcatCore.java:171) - coreStatusDTO={"attempted":"8673558528","speedList":["111010917"],"status":"cracked","total":"208827064576"} 
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -725,21 +148,21 @@ Caused by: java.lang.IllegalArgumentException: Value must only contain valid cha
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.2.RELEASE)
 
-2021-11-22 17:06:35,647  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
-2021-11-22 17:06:35,781  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
-2021-11-22 17:06:35,783  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-11-22 17:06:35,784  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
-2021-11-22 17:06:36,636  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-11-22 17:06:36,636  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 24000 ms
-2021-11-22 17:06:45,092  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
-2021-11-22 17:06:45,099  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
-2021-11-22 17:06:52,177  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
-2021-11-22 17:06:52,357  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
-2021-11-22 17:06:52,952  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8004"]
-2021-11-22 17:06:53,659  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8004 (http) with context path '/sweeney'
-2021-11-22 17:06:59,333  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-11-22 17:06:59,334  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-11-22 17:06:59,545  INFO (FrameworkServlet.java:547) - Completed initialization in 211 ms
+2021-11-24 12:58:54,097  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
+2021-11-24 12:58:54,586  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
+2021-11-24 12:58:54,588  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-11-24 12:58:54,590  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-24 12:58:54,915  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-11-24 12:58:54,916  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 9410 ms
+2021-11-24 12:59:00,181  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2021-11-24 12:59:00,189  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
+2021-11-24 12:59:04,247  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
+2021-11-24 12:59:04,351  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
+2021-11-24 12:59:04,730  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8004"]
+2021-11-24 12:59:04,984  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8004 (http) with context path '/sweeney'
+2021-11-24 12:59:10,123  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-24 12:59:10,124  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-11-24 12:59:10,150  INFO (FrameworkServlet.java:547) - Completed initialization in 26 ms
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -749,21 +172,18 @@ Caused by: java.lang.IllegalArgumentException: Value must only contain valid cha
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.2.RELEASE)
 
-2021-11-22 17:58:18,997  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
-2021-11-22 17:58:19,474  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
-2021-11-22 17:58:19,475  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-11-22 17:58:19,476  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
-2021-11-22 17:58:19,736  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-11-22 17:58:19,737  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 13147 ms
-2021-11-22 17:58:23,805  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
-2021-11-22 17:58:23,808  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
-2021-11-22 17:58:27,409  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
-2021-11-22 17:58:27,655  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
-2021-11-22 17:58:28,008  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8004"]
-2021-11-22 17:58:28,233  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8004 (http) with context path '/sweeney'
-2021-11-22 17:58:28,983  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-11-22 17:58:28,984  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-11-22 17:58:29,191  INFO (FrameworkServlet.java:547) - Completed initialization in 206 ms
+2021-11-24 13:00:51,120  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
+2021-11-24 13:00:51,805  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
+2021-11-24 13:00:51,807  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-11-24 13:00:51,808  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-24 13:00:52,324  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-11-24 13:00:52,324  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 16289 ms
+2021-11-24 13:01:00,161  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2021-11-24 13:01:00,169  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
+2021-11-24 13:01:03,846  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
+2021-11-24 13:01:03,912  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
+2021-11-24 13:01:04,051  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8004"]
+2021-11-24 13:01:04,233  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8004 (http) with context path '/sweeney'
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -773,18 +193,18 @@ Caused by: java.lang.IllegalArgumentException: Value must only contain valid cha
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.2.RELEASE)
 
-2021-11-22 20:02:33,583  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
-2021-11-22 20:02:33,805  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
-2021-11-22 20:02:33,806  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
-2021-11-22 20:02:33,807  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
-2021-11-22 20:02:34,681  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
-2021-11-22 20:02:34,682  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 20202 ms
-2021-11-22 20:02:39,796  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
-2021-11-22 20:02:39,802  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
-2021-11-22 20:02:46,313  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
-2021-11-22 20:02:46,423  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
-2021-11-22 20:02:47,153  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8004"]
-2021-11-22 20:02:47,531  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8004 (http) with context path '/sweeney'
-2021-11-22 20:02:59,552  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-11-22 20:02:59,554  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
-2021-11-22 20:02:59,586  INFO (FrameworkServlet.java:547) - Completed initialization in 32 ms
+2021-11-24 13:01:38,138  INFO (TomcatWebServer.java:92) - Tomcat initialized with port(s): 8004 (http)
+2021-11-24 13:01:38,472  INFO (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8004"]
+2021-11-24 13:01:38,473  INFO (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-11-24 13:01:38,475  INFO (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-11-24 13:01:39,029  INFO (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-11-24 13:01:39,030  INFO (ServletWebServerApplicationContext.java:284) - Root WebApplicationContext: initialization completed in 16889 ms
+2021-11-24 13:01:46,955  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService
+2021-11-24 13:01:46,960  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskExecutor'
+2021-11-24 13:01:51,869  INFO (ExecutorConfigurationSupport.java:171) - Initializing ExecutorService 'taskScheduler'
+2021-11-24 13:01:52,254  INFO (EndpointLinksResolver.java:58) - Exposing 15 endpoint(s) beneath base path ''
+2021-11-24 13:01:52,846  INFO (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8004"]
+2021-11-24 13:01:53,129  INFO (TomcatWebServer.java:204) - Tomcat started on port(s): 8004 (http) with context path '/sweeney'
+2021-11-24 13:01:55,347  INFO (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-24 13:01:55,349  INFO (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-11-24 13:01:55,651  INFO (FrameworkServlet.java:547) - Completed initialization in 152 ms
