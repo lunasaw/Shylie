@@ -1,3 +1,8 @@
 @echo off
-set PATH_ROOT="D:\graduation-project\project\application"
-start %PATH_ROOT%/jre/bin/java -Dspring.config.location=application.properties  -jar fusion-message-server-1.0.1-RELEASE.jar
+set PATH_ROOT="D:/graduation-project/graduation-project/application"
+cd %PATH_ROOT%/"fusion-message"
+rd /s /q logs
+md logs
+start  /b ../jre-win/bin/java -Dspring.config.location=application.properties  -jar fusion-message-server-1.0.1-RELEASE.jar
+
+
