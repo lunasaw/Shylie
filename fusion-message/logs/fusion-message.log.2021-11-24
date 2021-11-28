@@ -1,0 +1,9 @@
+2021-11-24 22:53:07,438  INFO [main] (StartupInfoLogger.java:55) - Starting FusionMessageApplication v1.0.1-RELEASE on luna-win with PID 33484 (D:\graduation-project\graduation-project\application\fusion-message\fusion-message-server-1.0.1-RELEASE.jar started by isluna in D:\graduation-project\graduation-project\application\fusion-message) 
+2021-11-24 22:53:07,441  INFO [main] (SpringApplication.java:651) - No active profile set, falling back to default profiles: default 
+2021-11-24 22:53:11,886  INFO [main] (StartupInfoLogger.java:61) - Started FusionMessageApplication in 4.963 seconds (JVM running for 5.601) 
+2021-11-24 23:31:14,264  INFO [main] (StartupInfoLogger.java:55) - Starting FusionMessageApplication v1.0.1-RELEASE on luna-win with PID 18796 (D:\graduation-project\graduation-project\application\fusion-message\fusion-message-server-1.0.1-RELEASE.jar started by isluna in D:\graduation-project\graduation-project\application\fusion-message) 
+2021-11-24 23:31:14,276  INFO [main] (SpringApplication.java:651) - No active profile set, falling back to default profiles: default 
+2021-11-24 23:31:35,584  INFO [main] (StartupInfoLogger.java:61) - Started FusionMessageApplication in 23.441 seconds (JVM running for 24.707) 
+2021-11-24 23:34:39,467  INFO [main] (StartupInfoLogger.java:55) - Starting FusionMessageApplication v1.0.1-RELEASE on luna-win with PID 18684 (D:\graduation-project\graduation-project\application\fusion-message\fusion-message-server-1.0.1-RELEASE.jar started by isluna in D:\graduation-project\graduation-project\application\fusion-message) 
+2021-11-24 23:34:39,494  INFO [main] (SpringApplication.java:651) - No active profile set, falling back to default profiles: default 
+2021-11-24 23:35:01,908  INFO [main] (StartupInfoLogger.java:61) - Started FusionMessageApplication in 24.547 seconds (JVM running for 25.757) 

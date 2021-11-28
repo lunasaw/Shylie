@@ -1,0 +1,45 @@
+# my global config
+global:
+  scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+  # scrape_timeout is set to the global default (10s).
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          # - alertmanager:9093
+
+# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+rule_files:
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+
+scrape_configs:
+  # 任意写，建议英文，不要包含特殊字符
+  - job_name: "wednesday"
+    metrics_path: "/wednesday/prometheus"
+    # 采集服务的地址，设置成上面Spring Boot应用所在服务器的具体地址。
+    static_configs:
+      - targets: ["localhost:8003"]
+  # 任意写，建议英文，不要包含特殊字符
+  - job_name: "fusion-user"
+    metrics_path: "/fusion-user/prometheus"
+    # 采集服务的地址，设置成上面Spring Boot应用所在服务器的具体地址。
+    static_configs:
+      - targets: ["localhost:8001"]
+  # 任意写，建议英文，不要包含特殊字符
+  - job_name: "fusion-message"
+    # 采集的路径是啥
+    metrics_path: "/fusion-message/prometheus"
+    # 采集服务的地址，设置成上面Spring Boot应用所在服务器的具体地址。
+    static_configs:
+      - targets: ["localhost:8002"]
+  # 任意写，建议英文，不要包含特殊字符
+  - job_name: "sweeney"
+    # 采集的路径是啥
+    metrics_path: "/sweeney/prometheus"
+    # 采集服务的地址，设置成上面Spring Boot应用所在服务器的具体地址。
+    static_configs:
+      - targets: ["localhost:8004"]
